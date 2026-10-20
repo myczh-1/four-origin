@@ -1,23 +1,16 @@
-# 4-Origin 后续发布流程
+# 4-Origin 发布与后续维护
 
-当前：个人署名myczh，代码与Adapter Apache-2.0，数据与报告CC BY 4.0，允许商用。已完成本地文件准备，未创建远程仓库、未上传。网名作为公开笔名使用；它不等同于GitHub/Hugging Face账号，不能据此猜测账号或URL。
+2026-10-20 首次公开：
 
-## 你需要决定和处理的事项
+- GitHub：https://github.com/myczh-1/four-origin
+- Text Adapter：https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-text
+- Origin Adapter：https://huggingface.co/myczh/four-origin-qwen3-0.6b-v3-origin
 
-1. 提供GitHub和Hugging Face实际账号/组织名。登录和双因素验证由你完成；不要把Token、密码或恢复码贴进聊天。
-2. 确认仓库名称。建议GitHub为four-origin；HF主发布两份：four-origin-qwen3-0.6b-v3-text、four-origin-qwen3-0.6b-v3-origin。这里只是建议，不代表名称可用或已经创建。
-3. 确认首发范围：建议先发布V2/V3代码与结果、V3两份Adapter；V2两份Adapter可随后补充。合成数据已在GitHub，不必首发就建独立HF数据仓库。
-4. 确认你有权以个人名义许可这些材料；若有其他贡献者或雇主权利，应先处理相关授权。
-5. 检查最终文件清单和项目介绍，再明确下达发布指令。此前所有工作停留本地。
+个人署名myczh。代码和Adapter采用Apache-2.0，数据和报告采用CC BY 4.0，允许商用。首发包括V2/V3实验代码、数据、原始结果与V3两份Adapter；未发布V2 Adapter或基座权重，没有独立HF数据仓库。
 
-## 实际执行顺序
+## 后续维护
 
-1. 根据你确认的真实账号/名称，在本地替换所有占位链接，更新GitHub和HF模型卡双向引用。重新检查许可证范围、权重哈希、隐私和指标出处。
-2. 在你允许远程操作后，创建GitHub仓库。上传release/four-origin/内的内容作为仓库根目录，不上传原始工作目录、release顶层构建脚本、虚拟环境、缓存或私人日志。不要让网站模板覆盖已有LICENSE；混合许可范围由LICENSING.md说明。
-3. 分别创建两个HF model仓库。v3-text/和v3-origin/各自目录内的内容放到对应仓库根目录，保留lora/子目录以及Origin的origin_embedding.pt。LICENSE、NOTICE、MODIFICATIONS.md、licenses/、加载器和权重.license文件一起上传。
-4. 推荐先在私有仓库核对文件及页面显示（私有上传同样需要你的明确授权），再按批准范围切换公开。核对license元数据、base_model、链接、文件哈希和下载目录结构。
-5. 确认公开后再为GitHub建立v0.1.0等版本标签和Release，记录对应HF提交版本与清单。版本号待确认，尚未创建。
-6. 下载检查可只校验文件及哈希。端到端模型加载或生成验证属于新增模型执行，当前没有执行；如果希望补做，需要另行授权，并与原实验成绩区分。
+保留每次发布的提交版本与文件哈希。后续修改应先在独立发布目录检查，再推送到对应仓库。不要覆盖原始实验记录。版本标签和GitHub Release尚未创建；可以在选定版本号后补充。模型加载与生成复验没有在发布期间运行，下载哈希核对不代表重新验证实验成绩。
 
 ## 公开时的表述
 
