@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "v2/base/normal/test/sample_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/test/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/test/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/test/invalid_rate",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/cross_template/sample_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/cross_template/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/cross_template/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/base/normal/cross_template/invalid_rate",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/test/sample_accuracy",
+    "value": 0.5,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/test/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/test/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/test/sample_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/test/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/test/source_flip_rate",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/cross_template/sample_accuracy",
+    "value": 0.5,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/cross_template/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/cross_template/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/normal/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/cross_template/sample_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/cross_template/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/cross_template/source_flip_rate",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/text/tagged/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "text/tagged/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/test/sample_accuracy",
+    "value": 0.999,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/test/pair_accuracy",
+    "value": 0.998,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/test/source_flip_rate",
+    "value": 0.998,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/test/sample_accuracy",
+    "value": 0.5,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/test/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/test/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/test/sample_accuracy",
+    "value": 0.001,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/test/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/test/source_flip_rate",
+    "value": 0.998,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/test/sample_accuracy",
+    "value": 0.495,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/test",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/test/pair_accuracy",
+    "value": 0.232,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/test",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/test/source_flip_rate",
+    "value": 0.474,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/test",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/test/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/test",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/cross_template/sample_accuracy",
+    "value": 0.9425,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/cross_template/pair_accuracy",
+    "value": 0.885,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/cross_template/source_flip_rate",
+    "value": 0.885,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/normal/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/cross_template/sample_accuracy",
+    "value": 0.5,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/cross_template/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/cross_template/source_flip_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/zero/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/cross_template/sample_accuracy",
+    "value": 0.0575,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/cross_template/pair_accuracy",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/cross_template/source_flip_rate",
+    "value": 0.885,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/swap/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/cross_template/sample_accuracy",
+    "value": 0.5375,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/cross_template",
+      "sample_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/cross_template/pair_accuracy",
+    "value": 0.245,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/cross_template",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/cross_template/source_flip_rate",
+    "value": 0.415,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/cross_template",
+      "source_flip_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v2/origin/shuffle/cross_template/invalid_rate",
+    "value": 0.0,
+    "source": "evidence/origin_counterfactual_v2/results.json",
+    "json_path": [
+      "metrics",
+      "origin/shuffle/cross_template",
+      "invalid_rate"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/experiment-report.md",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/test/self_asserted_as_fact_rate",
+    "value": 0.20833333333333334,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/test/external_fact_retention",
+    "value": 0.3055555555555556,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/test/requested_supplied_inference_retention",
+    "value": 0.10416666666666667,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/test/all_attributions_correct_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/test/fully_scorable_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/test",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/cross_template/self_asserted_as_fact_rate",
+    "value": 0.4895833333333333,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/cross_template/external_fact_retention",
+    "value": 0.5138888888888888,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/cross_template/requested_supplied_inference_retention",
+    "value": 0.14583333333333334,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/cross_template/all_attributions_correct_rate",
+    "value": 0.010416666666666666,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/base/normal/cross_template/fully_scorable_rate",
+    "value": 0.052083333333333336,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "base/normal/cross_template",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/test/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/test/external_fact_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/test/requested_supplied_inference_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/test/all_attributions_correct_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/test/fully_scorable_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/test",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/cross_template/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/cross_template/external_fact_retention",
+    "value": 0.9861111111111112,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/cross_template/requested_supplied_inference_retention",
+    "value": 0.9791666666666666,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/cross_template/all_attributions_correct_rate",
+    "value": 0.9895833333333334,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/text/normal/cross_template/fully_scorable_rate",
+    "value": 0.9895833333333334,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "text/normal/cross_template",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/test/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/test/external_fact_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/test/requested_supplied_inference_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/test/all_attributions_correct_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/test/fully_scorable_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/test",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/test/self_asserted_as_fact_rate",
+    "value": 0.4166666666666667,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/test/external_fact_retention",
+    "value": 0.5555555555555556,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/test/requested_supplied_inference_retention",
+    "value": 0.5,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/test/all_attributions_correct_rate",
+    "value": 0.5,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/test/fully_scorable_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/test",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/test/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/test/external_fact_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/test/requested_supplied_inference_retention",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/test/all_attributions_correct_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/test/fully_scorable_rate",
+    "value": 1.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/test",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/cross_template/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/cross_template/external_fact_retention",
+    "value": 0.9722222222222222,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/cross_template/requested_supplied_inference_retention",
+    "value": 0.9791666666666666,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/cross_template/all_attributions_correct_rate",
+    "value": 0.9375,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/normal/cross_template/fully_scorable_rate",
+    "value": 0.9375,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/normal/cross_template",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/cross_template/self_asserted_as_fact_rate",
+    "value": 0.4895833333333333,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/cross_template/external_fact_retention",
+    "value": 0.6527777777777778,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/cross_template/requested_supplied_inference_retention",
+    "value": 0.5,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/cross_template/all_attributions_correct_rate",
+    "value": 0.4895833333333333,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/zero/cross_template/fully_scorable_rate",
+    "value": 0.9791666666666666,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/zero/cross_template",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/cross_template/self_asserted_as_fact_rate",
+    "value": 0.0,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "self_asserted_as_fact_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/cross_template/external_fact_retention",
+    "value": 0.9722222222222222,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "external_fact_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/cross_template/requested_supplied_inference_retention",
+    "value": 0.9791666666666666,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "requested_supplied_inference_retention"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/cross_template/all_attributions_correct_rate",
+    "value": 0.9375,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "all_attributions_correct_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "v3/origin/swap/cross_template/fully_scorable_rate",
+    "value": 0.9375,
+    "source": "evidence/origin_generation_v3/results.json",
+    "json_path": [
+      "metrics",
+      "origin/swap/cross_template",
+      "fully_scorable_rate"
+    ],
+    "original_report": "evidence/origin_generation_v3/experiment-report.txt",
+    "interpretation": "archived controlled-task score; not general hallucination rate"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/overall/pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "overall",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/overall/correct_pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "overall",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/overall/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "overall",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/by_kind/configuration/pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "by_kind",
+      "configuration",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/by_kind/configuration/correct_pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "by_kind",
+      "configuration",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q0/by_kind/configuration/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q0",
+      "by_kind",
+      "configuration",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/overall/pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "overall",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/overall/correct_pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "overall",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/overall/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "overall",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/by_kind/configuration/pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "by_kind",
+      "configuration",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/by_kind/configuration/correct_pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "by_kind",
+      "configuration",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q0/by_kind/configuration/pair_accuracy",
+    "value": 1.0,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q0",
+      "by_kind",
+      "configuration",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/overall/pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "overall",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/overall/correct_pairs",
+    "value": 186,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "overall",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/overall/pair_accuracy",
+    "value": 0.93,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "overall",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/by_kind/configuration/pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "by_kind",
+      "configuration",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/by_kind/configuration/correct_pairs",
+    "value": 21,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "by_kind",
+      "configuration",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F0_Q1/by_kind/configuration/pair_accuracy",
+    "value": 0.6363636363636364,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F0_Q1",
+      "by_kind",
+      "configuration",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/overall/pairs",
+    "value": 200,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "overall",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/overall/correct_pairs",
+    "value": 177,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "overall",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/overall/pair_accuracy",
+    "value": 0.885,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "overall",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/by_kind/configuration/pairs",
+    "value": 33,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "by_kind",
+      "configuration",
+      "pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/by_kind/configuration/correct_pairs",
+    "value": 14,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "by_kind",
+      "configuration",
+      "correct_pairs"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  },
+  {
+    "id": "template-diagnosis/F1_Q1/by_kind/configuration/pair_accuracy",
+    "value": 0.42424242424242425,
+    "source": "evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "json_path": [
+      "summaries",
+      "F1_Q1",
+      "by_kind",
+      "configuration",
+      "pair_accuracy"
+    ],
+    "original_report": "evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "interpretation": "post-hoc diagnostic, not independent generalization test"
+  }
+]

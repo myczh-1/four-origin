@@ -1,0 +1,696 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "seed": 2026,
+  "device": "mps",
+  "origin_parameter_registered": true,
+  "origin_requires_grad": true,
+  "origin_shape": [
+    4,
+    1024
+  ],
+  "v1_inference_lora_trainable": false,
+  "training_probe_note": "LoRA trainability restored in memory, matching v1 train path. No checkpoint saved.",
+  "origin_update_norm_from_v1_zero_init": 0.12172404676675797,
+  "lora_B_norm_from_zero_init": 1.920436219776395,
+  "probe_loss": 3.3556796552147716e-05,
+  "origin_grad_norm": 0.002375630661845207,
+  "origin_grad_norm_by_id": [
+    0.00176524487324059,
+    0.0011374774621799588,
+    0.0008074511424638331,
+    0.0007626919541507959
+  ],
+  "lora_grad_norm": 0.0017001365093989981,
+  "one_step_update_norms": {
+    "lm.base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight": 0.015612522140145302,
+    "lm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.02219167724251747,
+    "lm.base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight": 0.01637880504131317,
+    "lm.base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight": 0.017867956310510635,
+    "lm.base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight": 0.015525022521615028,
+    "lm.base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight": 0.023470012471079826,
+    "lm.base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight": 0.014466946944594383,
+    "lm.base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight": 0.017484180629253387,
+    "lm.base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight": 0.015556149184703827,
+    "lm.base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight": 0.023431401699781418,
+    "lm.base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight": 0.014036224223673344,
+    "lm.base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight": 0.017471561208367348,
+    "lm.base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight": 0.01564651168882847,
+    "lm.base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight": 0.02335141971707344,
+    "lm.base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight": 0.014435185119509697,
+    "lm.base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight": 0.017587052658200264,
+    "lm.base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight": 0.015921203419566154,
+    "lm.base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight": 0.023758454248309135,
+    "lm.base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight": 0.01437954232096672,
+    "lm.base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight": 0.017606573179364204,
+    "lm.base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight": 0.01597815565764904,
+    "lm.base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight": 0.02379019744694233,
+    "lm.base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight": 0.014967578463256359,
+    "lm.base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight": 0.01771300472319126,
+    "lm.base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight": 0.015988722443580627,
+    "lm.base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight": 0.023190433159470558,
+    "lm.base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight": 0.014729861170053482,
+    "lm.base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight": 0.01769101805984974,
+    "lm.base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight": 0.016206122934818268,
+    "lm.base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight": 0.02340359054505825,
+    "lm.base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight": 0.014428499154746532,
+    "lm.base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight": 0.017680898308753967,
+    "lm.base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight": 0.015994301065802574,
+    "lm.base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight": 0.02310165762901306,
+    "lm.base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight": 0.014642623253166676,
+    "lm.base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight": 0.01778687722980976,
+    "lm.base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight": 0.016520069912075996,
+    "lm.base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight": 0.023380998522043228,
+    "lm.base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight": 0.015309800393879414,
+    "lm.base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight": 0.017749492079019547,
+    "lm.base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight": 0.016658790409564972,
+    "lm.base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight": 0.02387857437133789,
+    "lm.base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight": 0.014348877593874931,
+    "lm.base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight": 0.01778407394886017,
+    "lm.base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight": 0.016164155676960945,
+    "lm.base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight": 0.02282072603702545,
+    "lm.base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight": 0.015636097639799118,
+    "lm.base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight": 0.017818745225667953,
+    "lm.base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight": 0.016450980678200722,
+    "lm.base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight": 0.023434216156601906,
+    "lm.base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight": 0.01565990224480629,
+    "lm.base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight": 0.017748847603797913,
+    "lm.base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight": 0.01669951155781746,
+    "lm.base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight": 0.022783750668168068,
+    "lm.base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight": 0.01545313373208046,
+    "lm.base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight": 0.017809055745601654,
+    "lm.base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight": 0.016273487359285355,
+    "lm.base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight": 0.02261105179786682,
+    "lm.base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight": 0.01549492496997118,
+    "lm.base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight": 0.017727475613355637,
+    "lm.base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight": 0.016154056414961815,
+    "lm.base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight": 0.023570848628878593,
+    "lm.base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight": 0.01440598163753748,
+    "lm.base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight": 0.017838293686509132,
+    "lm.base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight": 0.01645745150744915,
+    "lm.base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight": 0.021609093993902206,
+    "lm.base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight": 0.014592920430004597,
+    "lm.base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight": 0.01763329841196537,
+    "lm.base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight": 0.01638202555477619,
+    "lm.base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight": 0.02045251429080963,
+    "lm.base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight": 0.015393631532788277,
+    "lm.base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight": 0.01778770238161087,
+    "lm.base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight": 0.016808409243822098,
+    "lm.base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight": 0.017936091870069504,
+    "lm.base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight": 0.014390739612281322,
+    "lm.base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight": 0.01766405999660492,
+    "lm.base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight": 0.015980608761310577,
+    "lm.base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight": 0.017839599400758743,
+    "lm.base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight": 0.014433200471103191,
+    "lm.base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight": 0.017611965537071228,
+    "lm.base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight": 0.016118431463837624,
+    "lm.base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight": 0.01356603391468525,
+    "lm.base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight": 0.015791164711117744,
+    "lm.base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight": 0.017532341182231903,
+    "lm.base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight": 0.015483856201171875,
+    "lm.base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight": 0.01130763441324234,
+    "lm.base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight": 0.014430954121053219,
+    "lm.base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight": 0.017278827726840973,
+    "lm.base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight": 0.015547620132565498,
+    "lm.base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight": 0.011613241396844387,
+    "lm.base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight": 0.012369013391435146,
+    "lm.base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight": 0.016672322526574135,
+    "lm.base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight": 0.017064938321709633,
+    "lm.base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight": 0.015073354355990887,
+    "lm.base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight": 0.013879776000976562,
+    "lm.base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight": 0.017216073349118233,
+    "lm.base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight": 0.01654285378754139,
+    "lm.base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight": 0.010680868290364742,
+    "lm.base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight": 0.013227363117039204,
+    "lm.base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight": 0.016433196142315865,
+    "lm.base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight": 0.015285274013876915,
+    "lm.base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight": 0.00886298157274723,
+    "lm.base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight": 0.01543355267494917,
+    "lm.base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight": 0.016498861834406853,
+    "lm.base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight": 0.016088612377643585,
+    "lm.base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight": 0.008623809553682804,
+    "lm.base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight": 0.014656243845820427,
+    "lm.base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight": 0.01564035378396511,
+    "lm.base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight": 0.017221778631210327,
+    "lm.base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight": 0.011797340586781502,
+    "lm.base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight": 0.013175890780985355,
+    "lm.base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight": 0.01592755690217018,
+    "origin_embedding.weight": 0.012773089110851288
+  },
+  "logit_probes": [
+    {
+      "normal_zero": {
+        "logit_l2": 201.70999145507812,
+        "logit_max_abs": 2.79736328125,
+        "probability_l1": 1.676089050306473e-05,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 105.25528717041016,
+        "logit_max_abs": 1.369140625,
+        "probability_l1": 2.1114434275659733e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -21.984397888183594,
+          -15.031272888183594
+        ],
+        "zero": [
+          -20.648466110229492,
+          -14.078153610229492
+        ],
+        "swap": [
+          -21.726594924926758,
+          -14.500033378601074
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 221.6705322265625,
+        "logit_max_abs": 2.35546875,
+        "probability_l1": 3.216749291823362e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 88.15615844726562,
+        "logit_max_abs": 1.00830078125,
+        "probability_l1": 9.348135790787637e-06,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -1.0251946150674485e-05,
+          -16.187509536743164
+        ],
+        "zero": [
+          -1.156323378381785e-05,
+          -16.234386444091797
+        ],
+        "swap": [
+          -1.5020257706055418e-05,
+          -15.890640258789062
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 201.2698516845703,
+        "logit_max_abs": 2.6357421875,
+        "probability_l1": 7.740375622233842e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 98.07534790039062,
+        "logit_max_abs": 1.33984375,
+        "probability_l1": 1.0827311598404776e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -22.679704666137695,
+          -15.906268119812012
+        ],
+        "zero": [
+          -21.296894073486328,
+          -15.406270027160645
+        ],
+        "swap": [
+          -22.398460388183594,
+          -15.453147888183594
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 223.2779998779297,
+        "logit_max_abs": 3.173828125,
+        "probability_l1": 8.506404810759705e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 214.6084442138672,
+        "logit_max_abs": 3.689453125,
+        "probability_l1": 5.27025549672544e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -17.593761444091797,
+          -16.390636444091797
+        ],
+        "zero": [
+          -14.515640258789062,
+          -15.671890258789062
+        ],
+        "swap": [
+          -13.421913146972656,
+          -15.312538146972656
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 233.0896759033203,
+        "logit_max_abs": 3.54443359375,
+        "probability_l1": 7.489569725294132e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 144.84690856933594,
+        "logit_max_abs": 1.96435546875,
+        "probability_l1": 1.6046646123868413e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -19.468759536743164,
+          -17.203134536743164
+        ],
+        "zero": [
+          -16.25001335144043,
+          -16.39063835144043
+        ],
+        "swap": [
+          -17.570329666137695,
+          -16.640642166137695
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 234.51197814941406,
+        "logit_max_abs": 2.48046875,
+        "probability_l1": 2.4461501197947655e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 81.89312744140625,
+        "logit_max_abs": 0.95556640625,
+        "probability_l1": 9.513865734334104e-06,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -1.0609570381348021e-05,
+          -15.89063549041748
+        ],
+        "zero": [
+          -1.1205610462639015e-05,
+          -15.750011444091797
+        ],
+        "swap": [
+          -1.537788011773955e-05,
+          -15.531265258789062
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 219.07093811035156,
+        "logit_max_abs": 2.46484375,
+        "probability_l1": 4.129957233089954e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 101.9129409790039,
+        "logit_max_abs": 1.1162109375,
+        "probability_l1": 1.1201494089618791e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -8.940656698541716e-06,
+          -15.984383583068848
+        ],
+        "zero": [
+          -1.07287787614041e-05,
+          -16.015636444091797
+        ],
+        "swap": [
+          -1.4543427823809907e-05,
+          -15.515639305114746
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 227.49813842773438,
+        "logit_max_abs": 3.181640625,
+        "probability_l1": 6.593588750547497e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 134.34539794921875,
+        "logit_max_abs": 1.931640625,
+        "probability_l1": 2.0103654605918564e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -17.546886444091797,
+          -16.593761444091797
+        ],
+        "zero": [
+          -14.59376335144043,
+          -16.07813835144043
+        ],
+        "swap": [
+          -15.531270980834961,
+          -15.812520980834961
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 198.43304443359375,
+        "logit_max_abs": 2.5859375,
+        "probability_l1": 5.20588037034031e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 164.4320831298828,
+        "logit_max_abs": 2.33984375,
+        "probability_l1": 2.1435263988678344e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -18.218761444091797,
+          -16.625011444091797
+        ],
+        "zero": [
+          -17.046886444091797,
+          -15.781261444091797
+        ],
+        "swap": [
+          -15.781270980834961,
+          -15.796895980834961
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 200.0533447265625,
+        "logit_max_abs": 2.685546875,
+        "probability_l1": 4.639623057300923e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 188.0245819091797,
+        "logit_max_abs": 3.556640625,
+        "probability_l1": 3.747529990505427e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -18.164073944091797,
+          -17.484386444091797
+        ],
+        "zero": [
+          -15.796887397766113,
+          -16.609386444091797
+        ],
+        "swap": [
+          -14.359403610229492,
+          -16.296903610229492
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 202.2631378173828,
+        "logit_max_abs": 2.486328125,
+        "probability_l1": 5.531968781724572e-06,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 149.3663330078125,
+        "logit_max_abs": 1.697265625,
+        "probability_l1": 2.0597628463292494e-05,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -18.312511444091797,
+          -17.062511444091797
+        ],
+        "zero": [
+          -16.343761444091797,
+          -16.468761444091797
+        ],
+        "swap": [
+          -16.75002098083496,
+          -16.56252098083496
+        ]
+      }
+    },
+    {
+      "normal_zero": {
+        "logit_l2": 236.37376403808594,
+        "logit_max_abs": 2.349609375,
+        "probability_l1": 0.033696047961711884,
+        "argmax_changed": false
+      },
+      "normal_swap": {
+        "logit_l2": 123.08538818359375,
+        "logit_max_abs": 2.21875,
+        "probability_l1": 0.06550124287605286,
+        "argmax_changed": false
+      },
+      "yes_no_logprobs": {
+        "normal": [
+          -3.3332486152648926,
+          -0.036373600363731384
+        ],
+        "zero": [
+          -3.9722042083740234,
+          -0.019079143181443214
+        ],
+        "swap": [
+          -5.8311004638671875,
+          -0.0029756813310086727
+        ]
+      }
+    }
+  ],
+  "generation_audit": {
+    "same_forward_for_train_and_generate": true,
+    "use_cache": false,
+    "full_prefix_recomputed": true,
+    "new_token_origin": "SELF",
+    "zero_method": "temporarily zero embedding weights, restore before swap"
+  },
+  "v1_files_unchanged": true,
+  "v1_file_hashes": {
+    "run.py": "ab1d94fd9ea6113fe84bdd6fe01424bcda38ef22f7d805f16f644036e8289562",
+    "README.md": "395f13ec8e55d0e1f215b0befb279675186bb215d84ddf616b8c264f6bef2b54",
+    "requirements.txt": "ef293e712cacf2fb73f7fd12809afb09dbff2f2cc3437af2634a6f5415312ee2",
+    "checkpoints/origin/lora/README.md": "4fb01070dbf1c311649b741432747c286d5438547f54ccdea88930e6d7b47faa",
+    "checkpoints/origin/lora/adapter_config.json": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f",
+    "checkpoints/origin/lora/adapter_model.safetensors": "43bf7401a0dc40eca8f3228d55b04e236de66ffac87b965699a12d06f45f996c",
+    "checkpoints/origin/origin_embedding.pt": "768a14de68a7d1c04a7f567031eacaa2e83579100bb5573660441a97af85fc79",
+    "checkpoints/origin/tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+    "checkpoints/origin/tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "checkpoints/origin/tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "checkpoints/origin/tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "checkpoints/origin/tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "checkpoints/origin/tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+    "checkpoints/origin/tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "checkpoints/text/lora/README.md": "4fb01070dbf1c311649b741432747c286d5438547f54ccdea88930e6d7b47faa",
+    "checkpoints/text/lora/adapter_config.json": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "checkpoints/text/lora/adapter_model.safetensors": "86057c7b68be133c7d79d98a5fc0ac20d2ab21f1cbc8fb26f086df6d0d2bab70",
+    "checkpoints/text/tokenizer/added_tokens.json": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+    "checkpoints/text/tokenizer/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "checkpoints/text/tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "checkpoints/text/tokenizer/special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+    "checkpoints/text/tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "checkpoints/text/tokenizer/tokenizer_config.json": "443bfa629eb16387a12edbf92a76f6a6f10b2af3b53d87ba1550adfcf45f7fa0",
+    "checkpoints/text/tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "data/test.jsonl": "42e12adc71484244f621e1a80f16c618a9a917f2348754e2b7d07970d353140e",
+    "data/train.jsonl": "2b11ccf8247ae54557e75c6c58eb218144f663b5180f82f6d66ea0139d750a9d",
+    "work/base.log": "a8a464e580464cd4b736fa97501615bace2989498d169804f46c66ba0be5712d",
+    "work/eval-origin.log": "cbdfe679f19e4a896bd6e3484927b289be1feefdd4f3b1969da8982ad835f7b7",
+    "work/eval-text.log": "2ba964c08d87591c45ffced132fdbc65def7fdb9bd51fb0601d64d6b90d3aabb",
+    "work/predictions_origin_zero.jsonl": "13cdd770708bd237da27967fdbd1a3a6f7fe11a9242df35f6f83ef95ea601688",
+    "work/probe-origin-zero.log": "96fa39fc04b068b32681a172e667282be42f0c78d44e880278cd166c0b65dc06",
+    "work/probe_origin.py": "f9e8da5fe1e2d7cde28dc1a4baedfca24ddac2cb41d4d29af5bfebb542b26671",
+    "work/requirements-lock.txt": "06f8cb75f6cee25c1ba306e7344f9eb067b78cc44efb4c44cae9f14b2eabfe82",
+    "work/train-origin.log": "ccb99c5b4531174855042aeb40293bfabeb33e0c57aa71f7e685a0e4241f5f5c",
+    "work/train-text.log": "552cff7a82310bd34886a2f59a19fd50780e12a7484e829f2b1958e58757006e",
+    "predictions_base.jsonl": "e1e3377bb275acbdb424e0f8f93ff93e90b5f6f5c4675da21bcd6f70e49ae567",
+    "predictions_origin.jsonl": "e8c199aa5161e707fdfd41c51c428a5b61b57d80bfa05d4b44eaeb4c6839480f",
+    "predictions_text.jsonl": "1f30cde10b48f5b14f8fb1f61810d0407c11eb156c300fbb54645deff78f4b04"
+  },
+  "structural_gate_passed": true,
+  "v2": {
+    "origin_nonzero_gradient_steps": 100,
+    "origin_gradient_min": 0.0012887222692370415,
+    "origin_gradient_max": 448.1305847167969,
+    "origin_update_norm": 0.1486123651266098,
+    "final_origin_norm_by_id": [
+      0.05218014493584633,
+      0.061522580683231354,
+      0.0974171832203865,
+      0.07802390307188034
+    ],
+    "only_lora_and_origin_trainable": true,
+    "lora_update_norm": 2.57682939176499,
+    "inference_checks": {
+      "probe_samples": 12,
+      "zero_pair_full_logits_max_abs": 0.0,
+      "swap_vs_counterfactual_partner_full_logits_max_abs": 0.0,
+      "batch_vs_single_same_answers": true,
+      "batch_vs_single_max_label_logprob_delta": 0.046875,
+      "normal_zero_logits": [
+        {
+          "logit_l2": 332.0154113769531,
+          "logit_max_abs": 4.040283203125,
+          "probability_l1": 1.815079122025054e-05,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1602.908447265625,
+          "logit_max_abs": 20.125,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 350.416748046875,
+          "logit_max_abs": 4.03125,
+          "probability_l1": 2.1398951503215358e-05,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1647.0645751953125,
+          "logit_max_abs": 20.5390625,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 380.5987548828125,
+          "logit_max_abs": 4.6142578125,
+          "probability_l1": 1.818312557588797e-05,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1555.4097900390625,
+          "logit_max_abs": 21.4375,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 375.17987060546875,
+          "logit_max_abs": 4.85888671875,
+          "probability_l1": 1.7316015146207064e-05,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1615.9642333984375,
+          "logit_max_abs": 21.0625,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 325.7932434082031,
+          "logit_max_abs": 3.900390625,
+          "probability_l1": 1.3519258573069237e-05,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1591.0914306640625,
+          "logit_max_abs": 21.03125,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 319.79254150390625,
+          "logit_max_abs": 3.740234375,
+          "probability_l1": 5.836314812768251e-06,
+          "argmax_changed": false
+        },
+        {
+          "logit_l2": 1569.0819091796875,
+          "logit_max_abs": 20.484375,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        }
+      ],
+      "normal_swap_logits": [
+        {
+          "logit_l2": 1501.9635009765625,
+          "logit_max_abs": 19.234375,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1501.9635009765625,
+          "logit_max_abs": 19.234375,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1543.671142578125,
+          "logit_max_abs": 18.9375,
+          "probability_l1": 1.999999761581421,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1543.671142578125,
+          "logit_max_abs": 18.9375,
+          "probability_l1": 1.999999761581421,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1423.802978515625,
+          "logit_max_abs": 19.1875,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1423.802978515625,
+          "logit_max_abs": 19.1875,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1545.7210693359375,
+          "logit_max_abs": 19.75,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1545.7210693359375,
+          "logit_max_abs": 19.75,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1468.4039306640625,
+          "logit_max_abs": 18.984375,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1468.4039306640625,
+          "logit_max_abs": 18.984375,
+          "probability_l1": 1.9999998807907104,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1499.93505859375,
+          "logit_max_abs": 20.140625,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        },
+        {
+          "logit_l2": 1499.93505859375,
+          "logit_max_abs": 20.140625,
+          "probability_l1": 2.0,
+          "argmax_changed": true
+        }
+      ]
+    },
+    "v1_files_unchanged_after_v2": true
+  }
+}

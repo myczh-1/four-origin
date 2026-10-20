@@ -1,0 +1,176 @@
+[
+  {
+    "split": "test",
+    "case": "mixed",
+    "pair_id": "test-0000",
+    "atoms": [
+      {
+        "key": "pool limit",
+        "value": "48",
+        "uncertain": false,
+        "text": "The pool limit is 48."
+      },
+      {
+        "key": "database",
+        "value": "SQLite",
+        "uncertain": true,
+        "text": "It is possible that the database is SQLite."
+      }
+    ],
+    "sources": [
+      3,
+      2
+    ],
+    "question": "For project_97ffbded5470: Describe the project configuration and distinguish confirmed information from unverified claims. Include the suggested possibilities, but identify them as unconfirmed.",
+    "expected": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is SQLite, but this is not confirmed.",
+    "text": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is SQLite, but this is not confirmed.",
+    "origin": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is SQLite, but this is not confirmed.",
+    "zero": "The reference confirms that the pool limit is 48. It is possible that the database is SQLite, but this is not confirmed by the reference.",
+    "swap": "The reference confirms that the pool limit is 48. It is possible that the database is SQLite, but this is not confirmed by the reference."
+  },
+  {
+    "split": "test",
+    "case": "conflict",
+    "pair_id": "test-0001",
+    "atoms": [
+      {
+        "key": "database",
+        "value": "PostgreSQL",
+        "uncertain": false,
+        "text": "For this project, the database is PostgreSQL."
+      },
+      {
+        "key": "database",
+        "value": "SQLite",
+        "uncertain": false,
+        "text": "For this project, the database is SQLite."
+      }
+    ],
+    "sources": [
+      2,
+      3
+    ],
+    "question": "For project_0e8d61be0a63: Describe the project configuration and distinguish confirmed information from unverified claims.",
+    "expected": "The reference confirms that the database is PostgreSQL. It is possible that the database is SQLite, but this is not confirmed by the reference.",
+    "text": "The reference confirms that the database is PostgreSQL. It is possible that the database is SQLite, but this is not confirmed by the reference.",
+    "origin": "The reference confirms that the database is PostgreSQL. It is possible that the database is SQLite, but this is not confirmed by the reference.",
+    "zero": "It is possible that the database is PostgreSQL, but this is not confirmed by the reference. The reference confirms that the database is SQLite.",
+    "swap": "It is possible that the database is PostgreSQL, but this is not confirmed by the reference. The reference confirms that the database is SQLite."
+  },
+  {
+    "split": "test",
+    "case": "uncertain",
+    "pair_id": "test-0002",
+    "atoms": [
+      {
+        "key": "database",
+        "value": "SQLite",
+        "uncertain": false,
+        "text": "The configured database is SQLite."
+      },
+      {
+        "key": "pool limit",
+        "value": "32",
+        "uncertain": true,
+        "text": "A tentative value for pool limit is 32."
+      }
+    ],
+    "sources": [
+      2,
+      3
+    ],
+    "question": "For project_c4f0af420360: Describe the project configuration and distinguish confirmed information from unverified claims. Include the suggested possibilities, but identify them as unconfirmed.",
+    "expected": "The reference confirms that the database is SQLite. It is possible that the pool limit is 32, but this is not confirmed by the reference.",
+    "text": "The reference confirms that the database is SQLite. It is possible that the pool limit is 32, but this is not confirmed by the reference.",
+    "origin": "The reference confirms that the database is SQLite. It is possible that the pool limit is 32, but this is not confirmed by the reference.",
+    "zero": "It is possible that the database is SQLite, but this is not confirmed by the reference. The reference suggests that the pool limit is 32, but this is not confirmed.",
+    "swap": "It is possible that the database is SQLite, but this is not confirmed by the reference. The reference suggests that the pool limit is 32, but this is not confirmed."
+  },
+  {
+    "split": "cross_template",
+    "case": "mixed",
+    "pair_id": "cross_template-0000",
+    "atoms": [
+      {
+        "key": "pool limit",
+        "value": "48",
+        "uncertain": false,
+        "text": "This project's pool limit has the value 48."
+      },
+      {
+        "key": "database",
+        "value": "MySQL",
+        "uncertain": true,
+        "text": "Possibly, the database is MySQL."
+      }
+    ],
+    "sources": [
+      3,
+      2
+    ],
+    "question": "For project_c1c59557203c: What can be stated confidently about this project, and what should still be treated as unconfirmed? Please preserve the proposed possibilities as possibilities, rather than established information.",
+    "expected": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is MySQL, but this is not confirmed.",
+    "text": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is MySQL, but this is not confirmed.",
+    "origin": "It is possible that the pool limit is 48, but this is not confirmed by the reference. The reference suggests that the database is MySQL, but this is not confirmed.",
+    "zero": "The reference confirms that the pool limit is 48. It is possible that the database is MySQL.",
+    "swap": "The reference confirms that the pool limit is 48. It is possible that the database is MySQL."
+  },
+  {
+    "split": "cross_template",
+    "case": "conflict",
+    "pair_id": "cross_template-0001",
+    "atoms": [
+      {
+        "key": "database",
+        "value": "SQLite",
+        "uncertain": false,
+        "text": "This project's database has the value SQLite."
+      },
+      {
+        "key": "database",
+        "value": "MySQL",
+        "uncertain": false,
+        "text": "This project's database has the value MySQL."
+      }
+    ],
+    "sources": [
+      3,
+      2
+    ],
+    "question": "For project_9321ea33b472: What can be stated confidently about this project, and what should still be treated as unconfirmed?",
+    "expected": "It is possible that the database is SQLite, but this is not confirmed by the reference. The reference confirms that the database is MySQL.",
+    "text": "It is possible that the database is SQLite, but this is not confirmed by the reference. The reference confirms that the database is MySQL.",
+    "origin": "It is possible that the database is SQLite, but this is not confirmed by the reference. The reference confirms that the database is MySQL.",
+    "zero": "The reference confirms that the database is SQLite. It is possible that the database is MySQL, but this is not confirmed by the reference.",
+    "swap": "The reference confirms that the database is SQLite. It is possible that the database is MySQL, but this is not confirmed by the reference."
+  },
+  {
+    "split": "cross_template",
+    "case": "uncertain",
+    "pair_id": "cross_template-0002",
+    "atoms": [
+      {
+        "key": "database",
+        "value": "MySQL",
+        "uncertain": false,
+        "text": "This project's database has the value MySQL."
+      },
+      {
+        "key": "pool limit",
+        "value": "8",
+        "uncertain": true,
+        "text": "Possibly, the pool limit is 8."
+      }
+    ],
+    "sources": [
+      2,
+      3
+    ],
+    "question": "For project_07edd25a3b71: What can be stated confidently about this project, and what should still be treated as unconfirmed? Please preserve the proposed possibilities as possibilities, rather than established information.",
+    "expected": "The reference confirms that the database is MySQL. It is possible that the pool limit is 8, but this is not confirmed by the reference.",
+    "text": "The reference confirms that the database is MySQL. It is possible that the pool limit is 8, but this is not confirmed by the reference.",
+    "origin": "The reference confirms that the database contains the value MySQL. It is possible that the pool limit is 8, but this is not confirmed by the reference.",
+    "zero": "The reference confirms that the database contains MySQL. It is possible that the pool limit is 8, but this is not confirmed by the reference.",
+    "swap": "It is possible that the database contains MySQL, but this is not confirmed by the reference. The reference suggests that the pool limit is 8, but this is not confirmed."
+  }
+]

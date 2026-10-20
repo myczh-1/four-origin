@@ -1,0 +1,155 @@
+{
+  "probe_samples": 12,
+  "zero_pair_full_logits_max_abs": 0.0,
+  "swap_vs_counterfactual_partner_full_logits_max_abs": 0.0,
+  "batch_vs_single_same_answers": true,
+  "batch_vs_single_max_label_logprob_delta": 0.046875,
+  "normal_zero_logits": [
+    {
+      "logit_l2": 332.0154113769531,
+      "logit_max_abs": 4.040283203125,
+      "probability_l1": 1.815079122025054e-05,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1602.908447265625,
+      "logit_max_abs": 20.125,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 350.416748046875,
+      "logit_max_abs": 4.03125,
+      "probability_l1": 2.1398951503215358e-05,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1647.0645751953125,
+      "logit_max_abs": 20.5390625,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 380.5987548828125,
+      "logit_max_abs": 4.6142578125,
+      "probability_l1": 1.818312557588797e-05,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1555.4097900390625,
+      "logit_max_abs": 21.4375,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 375.17987060546875,
+      "logit_max_abs": 4.85888671875,
+      "probability_l1": 1.7316015146207064e-05,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1615.9642333984375,
+      "logit_max_abs": 21.0625,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 325.7932434082031,
+      "logit_max_abs": 3.900390625,
+      "probability_l1": 1.3519258573069237e-05,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1591.0914306640625,
+      "logit_max_abs": 21.03125,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 319.79254150390625,
+      "logit_max_abs": 3.740234375,
+      "probability_l1": 5.836314812768251e-06,
+      "argmax_changed": false
+    },
+    {
+      "logit_l2": 1569.0819091796875,
+      "logit_max_abs": 20.484375,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    }
+  ],
+  "normal_swap_logits": [
+    {
+      "logit_l2": 1501.9635009765625,
+      "logit_max_abs": 19.234375,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1501.9635009765625,
+      "logit_max_abs": 19.234375,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1543.671142578125,
+      "logit_max_abs": 18.9375,
+      "probability_l1": 1.999999761581421,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1543.671142578125,
+      "logit_max_abs": 18.9375,
+      "probability_l1": 1.999999761581421,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1423.802978515625,
+      "logit_max_abs": 19.1875,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1423.802978515625,
+      "logit_max_abs": 19.1875,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1545.7210693359375,
+      "logit_max_abs": 19.75,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1545.7210693359375,
+      "logit_max_abs": 19.75,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1468.4039306640625,
+      "logit_max_abs": 18.984375,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1468.4039306640625,
+      "logit_max_abs": 18.984375,
+      "probability_l1": 1.9999998807907104,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1499.93505859375,
+      "logit_max_abs": 20.140625,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    },
+    {
+      "logit_l2": 1499.93505859375,
+      "logit_max_abs": 20.140625,
+      "probability_l1": 2.0,
+      "argmax_changed": true
+    }
+  ]
+}

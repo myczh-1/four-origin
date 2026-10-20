@@ -1,0 +1,37 @@
+{
+  "splits": {
+    "train": {
+      "pairs": 2000,
+      "samples": 4000,
+      "sha256": "93026f318b66c45211e0ac4bc635f0101bd237293747f8116954af1d743969e5",
+      "max_prompt_tokens": 54
+    },
+    "validation": {
+      "pairs": 300,
+      "samples": 600,
+      "sha256": "b46010d8fbd288a51a6a15232eb51c6a00475e56a55d99a8a701e0300703835b",
+      "max_prompt_tokens": 54
+    },
+    "test": {
+      "pairs": 500,
+      "samples": 1000,
+      "sha256": "db155d7e4c0913f4219ede98802539a8f17ab528513d8d1452a91e3d0fe53dc7",
+      "max_prompt_tokens": 54
+    },
+    "cross_template": {
+      "pairs": 200,
+      "samples": 400,
+      "sha256": "353c8bd127a49e59025aecdaefcf26775ee181f31de4354e167335b6d6634511",
+      "max_prompt_tokens": 56
+    }
+  },
+  "pair_invariants": true,
+  "disjoint_facts_and_entities": true,
+  "no_origin_text_hints": true,
+  "seed": 271828,
+  "generation": {
+    "greedy": true,
+    "max_new_tokens": 6,
+    "use_cache": false
+  }
+}

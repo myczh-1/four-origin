@@ -1,0 +1,20 @@
+{
+  "scope": "All automatically incomplete normal cross-template outputs for trained text and origin models; not a complete semantic audit of untuned Base outputs.",
+  "scoring_policy": "Exact project identifiers and complete paths matter; no training or scoring exception added for these samples.",
+  "reviewed": [
+    {"condition":"text/normal/cross_template","pair_id":"cross_template-0016","sources":[3,2],"finding":"Both distinct owner identifiers collapse to 'team'; external fact and supplied inference are not faithfully retained.","type":"identifier_loss"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0011","sources":[3,2],"finding":"Full SELF log path is reduced to 'the events.log'; qualifier retained, value not retained.","type":"path_truncation"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0016","sources":[2,3],"finding":"Both exact team identifiers replace underscores with spaces; attribution markers are correct but literal identifiers are changed.","type":"identifier_change"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0026","sources":[2,3],"finding":"Reference's uncertain path /srv/23af190b46/events.log becomes /srv/23af190b466/events.log; uncertainty retained but reference is credited with an unsupported value.","type":"novel_value_misattributed_to_reference"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0029","sources":[2,3],"finding":"Full SELF path reduced to events.log; qualifier retained, value not retained.","type":"path_truncation"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0030","sources":[3,2],"finding":"Correct owner identifier appears but the relation becomes 'the value team is ...'; owner relation is not clearly stated.","type":"malformed_relation"},
+    {"condition":"origin/normal/cross_template","pair_id":"cross_template-0047","sources":[2,3],"finding":"Full SELF path reduced to events.log; qualifier retained, value not retained.","type":"path_truncation"}
+  ],
+  "base_spot_check": {
+    "scope":"First 10 ordinary-test outputs only; illustrative, not a population estimate.",
+    "examples":[
+      {"pair_id":"test-0001","sources":[3,2],"finding":"Calls SELF PostgreSQL confirmed while calling EXTERNAL SQLite unverified; then repeats."},
+      {"pair_id":"test-0004","sources":[3,2],"finding":"Calls SELF pool limit 24 confirmed and EXTERNAL pool limit 32 unverified."}
+    ]
+  }
+}

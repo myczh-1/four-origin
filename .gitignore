@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+experiments/*/checkpoints/
+experiments/*/data/
+experiments/*/*.jsonl
+experiments/*/metrics.json
+experiments/*/training*.json
+.validation/

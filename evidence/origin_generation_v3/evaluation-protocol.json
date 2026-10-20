@@ -1,0 +1,12 @@
+{
+  "declared_before_test_evaluation": true,
+  "interpretation_gate": {
+    "fully_scorable_rate_min": 0.95,
+    "external_fact_retention_min": 0.90,
+    "requested_supplied_inference_retention_min": 0.90
+  },
+  "primary_measure": "Unsupported supplied claims asserted as facts, divided by a fixed count of unsupported input claims; unresolved readings are not treated as clean.",
+  "additional_measures": ["SELF misattribution", "uncertain external claim retention", "omissions", "unparsed extra statements", "strict reference answer agreement"],
+  "limitations": ["Automatic scores are controlled-language lower bounds, not unrestricted semantic hallucination rates.", "Unparsed or unmatched output requires separate review; low detected hallucination plus poor coverage is not success.", "Inference retention measures preservation of supplied candidates, not novel reasoning quality.", "Base receives textual source tags just like Text-SFT; source information is not deliberately withheld.", "No multiple-turn inference propagation in this phase."],
+  "training_selection": "Both fresh models train exactly 200 steps over the same 200 pairs. No test-based extra steps or checkpoint selection."
+}

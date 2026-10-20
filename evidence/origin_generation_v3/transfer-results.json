@@ -1,0 +1,135 @@
+{
+  "metrics": {
+    "v2_origin": {
+      "counts": {
+        "records": 24,
+        "fully_scorable": 0,
+        "exact_target": 0,
+        "unparsed_records": 24,
+        "atoms": 48,
+        "omitted": 44,
+        "unresolved": 0,
+        "external_total": 18,
+        "external_retained": 1,
+        "unsupported_total": 30,
+        "asserted_without_support": 1,
+        "unsupported_unresolved": 0,
+        "self_total": 24,
+        "self_promoted": 0,
+        "requested_inference_total": 12,
+        "requested_inference_retained": 1,
+        "uncertain_external_total": 6,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.0,
+      "exact_target_rate": 0.0,
+      "unsupported_assertion_rate_lower_bound": 0.03333333333333333,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 0.05555555555555555,
+      "requested_supplied_inference_retention": 0.08333333333333333,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "conflict": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "uncertain": {
+          "records": 8,
+          "exact_target": 0
+        }
+      }
+    },
+    "v2_origin_zero": {
+      "counts": {
+        "records": 24,
+        "fully_scorable": 0,
+        "exact_target": 0,
+        "unparsed_records": 24,
+        "atoms": 48,
+        "omitted": 38,
+        "unresolved": 4,
+        "external_total": 18,
+        "external_retained": 1,
+        "unsupported_total": 30,
+        "asserted_without_support": 1,
+        "unsupported_unresolved": 2,
+        "self_total": 24,
+        "self_promoted": 1,
+        "requested_inference_total": 12,
+        "requested_inference_retained": 2,
+        "uncertain_external_total": 6,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.0,
+      "exact_target_rate": 0.0,
+      "unsupported_assertion_rate_lower_bound": 0.03333333333333333,
+      "self_misattribution_rate_lower_bound": 0.041666666666666664,
+      "external_fact_retention": 0.05555555555555555,
+      "requested_supplied_inference_retention": 0.16666666666666666,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "conflict": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "uncertain": {
+          "records": 8,
+          "exact_target": 0
+        }
+      }
+    },
+    "v2_text": {
+      "counts": {
+        "records": 24,
+        "fully_scorable": 4,
+        "exact_target": 0,
+        "unparsed_records": 19,
+        "atoms": 48,
+        "omitted": 30,
+        "unresolved": 0,
+        "external_total": 18,
+        "external_retained": 6,
+        "unsupported_total": 30,
+        "asserted_without_support": 3,
+        "unsupported_unresolved": 0,
+        "self_total": 24,
+        "self_promoted": 2,
+        "requested_inference_total": 12,
+        "requested_inference_retained": 3,
+        "uncertain_external_total": 6,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.16666666666666666,
+      "exact_target_rate": 0.0,
+      "unsupported_assertion_rate_lower_bound": 0.1,
+      "self_misattribution_rate_lower_bound": 0.08333333333333333,
+      "external_fact_retention": 0.3333333333333333,
+      "requested_supplied_inference_retention": 0.25,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "conflict": {
+          "records": 8,
+          "exact_target": 0
+        },
+        "uncertain": {
+          "records": 8,
+          "exact_target": 0
+        }
+      }
+    }
+  },
+  "cache_parity_passed": true,
+  "training_performed": false
+}

@@ -1,0 +1,432 @@
+{
+  "base/normal/test": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 1,
+      "exact_target": 0,
+      "unparsed_records": 90,
+      "atoms": 192,
+      "omitted": 17,
+      "unresolved": 59,
+      "external_total": 72,
+      "external_retained": 39,
+      "unsupported_total": 120,
+      "asserted_without_support": 49,
+      "unsupported_unresolved": 40,
+      "self_total": 96,
+      "self_promoted": 45,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 7,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 0
+    },
+    "fully_scorable_rate": 0.010416666666666666,
+    "exact_target_rate": 0.0,
+    "unsupported_assertion_rate_lower_bound": 0.4083333333333333,
+    "self_misattribution_rate_lower_bound": 0.46875,
+    "external_fact_retention": 0.5416666666666666,
+    "requested_supplied_inference_retention": 0.14583333333333334,
+    "uncertain_external_retention": 0.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 0
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 0
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 0
+      }
+    }
+  },
+  "base/normal/cross_template": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 6,
+      "exact_target": 0,
+      "unparsed_records": 86,
+      "atoms": 192,
+      "omitted": 19,
+      "unresolved": 37,
+      "external_total": 72,
+      "external_retained": 44,
+      "unsupported_total": 120,
+      "asserted_without_support": 71,
+      "unsupported_unresolved": 23,
+      "self_total": 96,
+      "self_promoted": 62,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 8,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 0
+    },
+    "fully_scorable_rate": 0.0625,
+    "exact_target_rate": 0.0,
+    "unsupported_assertion_rate_lower_bound": 0.5916666666666667,
+    "self_misattribution_rate_lower_bound": 0.6458333333333334,
+    "external_fact_retention": 0.6111111111111112,
+    "requested_supplied_inference_retention": 0.16666666666666666,
+    "uncertain_external_retention": 0.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 0
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 0
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 0
+      }
+    }
+  },
+  "text/normal/test": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 96,
+      "exact_target": 96,
+      "unparsed_records": 0,
+      "atoms": 192,
+      "omitted": 0,
+      "unresolved": 0,
+      "external_total": 72,
+      "external_retained": 72,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 48,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 24
+    },
+    "fully_scorable_rate": 1.0,
+    "exact_target_rate": 1.0,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 1.0,
+    "requested_supplied_inference_retention": 1.0,
+    "uncertain_external_retention": 1.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 32
+      }
+    }
+  },
+  "text/normal/cross_template": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 95,
+      "exact_target": 78,
+      "unparsed_records": 1,
+      "atoms": 192,
+      "omitted": 2,
+      "unresolved": 0,
+      "external_total": 72,
+      "external_retained": 71,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 47,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 24
+    },
+    "fully_scorable_rate": 0.9895833333333334,
+    "exact_target_rate": 0.8125,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 0.9861111111111112,
+    "requested_supplied_inference_retention": 0.9791666666666666,
+    "uncertain_external_retention": 1.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 26
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 28
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 24
+      }
+    }
+  },
+  "origin/normal/test": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 96,
+      "exact_target": 96,
+      "unparsed_records": 0,
+      "atoms": 192,
+      "omitted": 0,
+      "unresolved": 0,
+      "external_total": 72,
+      "external_retained": 72,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 48,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 24
+    },
+    "fully_scorable_rate": 1.0,
+    "exact_target_rate": 1.0,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 1.0,
+    "requested_supplied_inference_retention": 1.0,
+    "uncertain_external_retention": 1.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 32
+      }
+    }
+  },
+  "origin/zero/test": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 96,
+      "exact_target": 48,
+      "unparsed_records": 0,
+      "atoms": 192,
+      "omitted": 0,
+      "unresolved": 0,
+      "external_total": 72,
+      "external_retained": 40,
+      "unsupported_total": 120,
+      "asserted_without_support": 40,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 48,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 24,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 8
+    },
+    "fully_scorable_rate": 1.0,
+    "exact_target_rate": 0.5,
+    "unsupported_assertion_rate_lower_bound": 0.3333333333333333,
+    "self_misattribution_rate_lower_bound": 0.5,
+    "external_fact_retention": 0.5555555555555556,
+    "requested_supplied_inference_retention": 0.5,
+    "uncertain_external_retention": 0.3333333333333333,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 16
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 16
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 16
+      }
+    }
+  },
+  "origin/swap/test": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 96,
+      "exact_target": 96,
+      "unparsed_records": 0,
+      "atoms": 192,
+      "omitted": 0,
+      "unresolved": 0,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 48,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 24,
+      "external_total": 72,
+      "external_retained": 72
+    },
+    "fully_scorable_rate": 1.0,
+    "exact_target_rate": 1.0,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 1.0,
+    "requested_supplied_inference_retention": 1.0,
+    "uncertain_external_retention": 1.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 32
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 32
+      }
+    }
+  },
+  "origin/normal/cross_template": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 90,
+      "exact_target": 49,
+      "unparsed_records": 5,
+      "atoms": 192,
+      "omitted": 6,
+      "unresolved": 1,
+      "external_total": 72,
+      "external_retained": 70,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 47,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 23
+    },
+    "fully_scorable_rate": 0.9375,
+    "exact_target_rate": 0.5104166666666666,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 0.9722222222222222,
+    "requested_supplied_inference_retention": 0.9791666666666666,
+    "uncertain_external_retention": 0.9583333333333334,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 14
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 25
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 10
+      }
+    }
+  },
+  "origin/zero/cross_template": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 96,
+      "exact_target": 32,
+      "unparsed_records": 0,
+      "atoms": 192,
+      "omitted": 0,
+      "unresolved": 0,
+      "external_total": 72,
+      "external_retained": 48,
+      "unsupported_total": 120,
+      "asserted_without_support": 48,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 48,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 24,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 0
+    },
+    "fully_scorable_rate": 1.0,
+    "exact_target_rate": 0.3333333333333333,
+    "unsupported_assertion_rate_lower_bound": 0.4,
+    "self_misattribution_rate_lower_bound": 0.5,
+    "external_fact_retention": 0.6666666666666666,
+    "requested_supplied_inference_retention": 0.5,
+    "uncertain_external_retention": 0.0,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 10
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 13
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 9
+      }
+    }
+  },
+  "origin/swap/cross_template": {
+    "counts": {
+      "records": 96,
+      "fully_scorable": 90,
+      "exact_target": 49,
+      "unparsed_records": 5,
+      "atoms": 192,
+      "omitted": 6,
+      "unresolved": 1,
+      "unsupported_total": 120,
+      "asserted_without_support": 0,
+      "unsupported_unresolved": 0,
+      "self_total": 96,
+      "self_promoted": 0,
+      "requested_inference_total": 48,
+      "requested_inference_retained": 47,
+      "uncertain_external_total": 24,
+      "uncertain_external_retained": 23,
+      "external_total": 72,
+      "external_retained": 70
+    },
+    "fully_scorable_rate": 0.9375,
+    "exact_target_rate": 0.5104166666666666,
+    "unsupported_assertion_rate_lower_bound": 0.0,
+    "self_misattribution_rate_lower_bound": 0.0,
+    "external_fact_retention": 0.9722222222222222,
+    "requested_supplied_inference_retention": 0.9791666666666666,
+    "uncertain_external_retention": 0.9583333333333334,
+    "by_case_exact": {
+      "mixed": {
+        "records": 32,
+        "exact_target": 14
+      },
+      "conflict": {
+        "records": 32,
+        "exact_target": 25
+      },
+      "uncertain": {
+        "records": 32,
+        "exact_target": 10
+      }
+    }
+  }
+}

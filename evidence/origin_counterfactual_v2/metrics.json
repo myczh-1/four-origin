@@ -1,0 +1,254 @@
+{
+  "base/normal/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.0,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 1.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -1.3922879012227058,
+    "by_kind": {
+      "number": 0.0,
+      "name": 0.0,
+      "configuration": 0.0,
+      "path": 0.0,
+      "date": 0.0,
+      "boolean": 0.0
+    }
+  },
+  "base/normal/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.0,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 1.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -1.4253051908314227,
+    "by_kind": {
+      "number": 0.0,
+      "name": 0.0,
+      "configuration": 0.0,
+      "path": 0.0,
+      "date": 0.0,
+      "boolean": 0.0
+    }
+  },
+  "text/normal/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.5,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -7.578369016504094,
+    "by_kind": {
+      "number": 0.5,
+      "name": 0.5,
+      "configuration": 0.5,
+      "path": 0.5,
+      "date": 0.5,
+      "boolean": 0.5
+    }
+  },
+  "text/tagged/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 1.0,
+    "pair_accuracy": 1.0,
+    "source_flip_rate": 1.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.9999853815385504,
+    "mean_target_logprob": -1.5311595090679475e-05,
+    "by_kind": {
+      "number": 1.0,
+      "name": 1.0,
+      "configuration": 1.0,
+      "path": 1.0,
+      "date": 1.0,
+      "boolean": 1.0
+    }
+  },
+  "text/normal/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.5,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -6.245755618086789,
+    "by_kind": {
+      "number": 0.5,
+      "name": 0.5,
+      "configuration": 0.5,
+      "path": 0.5,
+      "date": 0.5,
+      "boolean": 0.5
+    }
+  },
+  "text/tagged/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 1.0,
+    "pair_accuracy": 1.0,
+    "source_flip_rate": 1.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.9999910618367831,
+    "mean_target_logprob": -1.5579017322124855e-05,
+    "by_kind": {
+      "number": 1.0,
+      "name": 1.0,
+      "configuration": 1.0,
+      "path": 1.0,
+      "date": 1.0,
+      "boolean": 1.0
+    }
+  },
+  "origin/normal/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.999,
+    "pair_accuracy": 0.998,
+    "source_flip_rate": 0.998,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.9979853365127781,
+    "mean_target_logprob": -0.011188040000007277,
+    "by_kind": {
+      "number": 1.0,
+      "name": 1.0,
+      "configuration": 0.9939759036144579,
+      "path": 1.0,
+      "date": 1.0,
+      "boolean": 1.0
+    }
+  },
+  "origin/zero/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.5,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -10.17436258771698,
+    "by_kind": {
+      "number": 0.5,
+      "name": 0.5,
+      "configuration": 0.5,
+      "path": 0.5,
+      "date": 0.5,
+      "boolean": 0.5
+    }
+  },
+  "origin/swap/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.001,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.998,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": -0.9979853365127781,
+    "mean_target_logprob": -17.57614110803345,
+    "by_kind": {
+      "number": 0.0,
+      "name": 0.0,
+      "configuration": 0.006024096385542169,
+      "path": 0.0,
+      "date": 0.0,
+      "boolean": 0.0
+    }
+  },
+  "origin/shuffle/test": {
+    "samples": 1000,
+    "pairs": 500,
+    "sample_accuracy": 0.495,
+    "pair_accuracy": 0.232,
+    "source_flip_rate": 0.474,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": -0.009998967296319194,
+    "mean_target_logprob": -8.872656667765149,
+    "by_kind": {
+      "number": 0.5178571428571429,
+      "name": 0.5297619047619048,
+      "configuration": 0.5120481927710844,
+      "path": 0.42771084337349397,
+      "date": 0.4819277108433735,
+      "boolean": 0.5
+    }
+  },
+  "origin/normal/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.9425,
+    "pair_accuracy": 0.885,
+    "source_flip_rate": 0.885,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.8801759003779207,
+    "mean_target_logprob": -0.36605492913814486,
+    "by_kind": {
+      "number": 1.0,
+      "name": 1.0,
+      "configuration": 0.7121212121212122,
+      "path": 0.9545454545454546,
+      "date": 1.0,
+      "boolean": 0.9848484848484849
+    }
+  },
+  "origin/zero/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.5,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.0,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.0,
+    "mean_target_logprob": -9.738085499610195,
+    "by_kind": {
+      "number": 0.5,
+      "name": 0.5,
+      "configuration": 0.5,
+      "path": 0.5,
+      "date": 0.5,
+      "boolean": 0.5
+    }
+  },
+  "origin/swap/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.0575,
+    "pair_accuracy": 0.0,
+    "source_flip_rate": 0.885,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": -0.8801759003779207,
+    "mean_target_logprob": -13.431914256441287,
+    "by_kind": {
+      "number": 0.0,
+      "name": 0.0,
+      "configuration": 0.2878787878787879,
+      "path": 0.045454545454545456,
+      "date": 0.0,
+      "boolean": 0.015151515151515152
+    }
+  },
+  "origin/shuffle/cross_template": {
+    "samples": 400,
+    "pairs": 200,
+    "sample_accuracy": 0.5375,
+    "pair_accuracy": 0.245,
+    "source_flip_rate": 0.415,
+    "invalid_rate": 0.0,
+    "mean_yes_probability_external_minus_self": 0.07197049136833047,
+    "mean_target_logprob": -6.459485184830873,
+    "by_kind": {
+      "number": 0.5882352941176471,
+      "name": 0.5,
+      "configuration": 0.5454545454545454,
+      "path": 0.5,
+      "date": 0.5757575757575758,
+      "boolean": 0.5151515151515151
+    }
+  }
+}

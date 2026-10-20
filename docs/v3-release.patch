@@ -1,0 +1,30 @@
+--- original/run_v3.py
++++ release/run_v3.py
+@@ -1,6 +1,6 @@
+ """Single-turn source-grounded generation pilot; previous experiments are read-only."""
+ import argparse, gc, hashlib, json, math, os, random, re, sys, time
+-os.environ["HF_HUB_OFFLINE"] = "1"
++# Offline mode is controlled by the caller in the release copy.
+ from collections import Counter, defaultdict
+ from pathlib import Path
+ import torch
+@@ -259,7 +259,8 @@
+         m,p=evaluate(model,tok,rows,tagged=variant=='text',name=name);summary[name]=m;records+=p
+         if variant=='origin':
+             m,p=evaluate(model,tok,rows,zero=True,name='v2_origin_zero');summary['v2_origin_zero']=m;records+=p
+-        del model;gc.collect();torch.mps.empty_cache()
++        del model;gc.collect()
++        if v2.DEVICE.type=='mps':torch.mps.empty_cache()
+     save('transfer-results.json',{'metrics':summary,'cache_parity_passed':True,'training_performed':False})
+     (HERE/'transfer-predictions.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in records))
+ 
+@@ -310,7 +311,8 @@
+                 metrics[name]=m;records+=p
+                 save('metrics.json',metrics)
+                 (HERE/'predictions.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in records))
+-        del model;gc.collect();torch.mps.empty_cache()
++        del model;gc.collect()
++        if v2.DEVICE.type=='mps':torch.mps.empty_cache()
+     save('cache-checks.json',cache_checks)
+ 
+ if __name__=='__main__':

@@ -1,0 +1,22 @@
+{
+  "status": "BLOCKED_NO_HUMAN_GOLD",
+  "human_labels": 0,
+  "pending_records": 250,
+  "atom_classification_accuracy": null,
+  "self_promotion_precision": null,
+  "self_promotion_recall": null,
+  "self_promotion_f1": null,
+  "external_retention_precision": null,
+  "external_retention_recall": null,
+  "frozen_validation_confusion_matrix": null,
+  "random_holdout_metrics": null,
+  "development_machine_label_counts": {
+    "SUPPORTED_EXTERNAL": 60,
+    "MISSTATED_EXTERNAL": 22,
+    "UNRESOLVED": 91,
+    "QUALIFIED_INFERENCE": 27,
+    "UNSUPPORTED_ASSERTION": 1
+  },
+  "development_unresolved_fraction": 0.4527363184079602,
+  "formal_rescored_records": 0
+}

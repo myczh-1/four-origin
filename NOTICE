@@ -1,0 +1,13 @@
+4-Origin
+Copyright 2026 myczh
+
+This is the project's attribution notice, not an upstream Qwen NOTICE file.
+Based on Qwen/Qwen3-0.6B, revision c1899de289a04d12100db370d81485cdf75e47ca.
+Upstream copyright notice: Copyright 2024 Alibaba Cloud.
+Upstream license: Apache License, Version 2.0; the exact upstream LICENSE is included in licenses/Qwen3-0.6B-LICENSE.txt.
+No separate NOTICE file was present in the inspected upstream revision (2026-10-20).
+
+Project modifications: LoRA adaptation of q_proj/v_proj for controlled provenance classification (V2) and supplied-claim generation (V3); Origin variants additionally introduce a learned four-row origin embedding and custom runtime ID handling. Base weights are frozen during training and are not bundled. The supplied adapter tensors are project training outputs, not unmodified upstream weights. See MODIFICATIONS.md for file-level scope.
+
+No affiliation with or endorsement by Qwen or Alibaba Cloud is implied.
+Third-party rights and applicable upstream notices remain intact.

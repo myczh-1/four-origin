@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-10-19T15:53:30.347754+00:00",
+  "sha256": {
+    "scorer_v41.py": "52f631c218c9118608075837536dc34b9020d02a756a52995261aa816400af2f",
+    "prepare_annotations.py": "f934af44bfc99a8883f0077c6f3abedad433c924d39a06bc54f272e0c2dec511",
+    "verify.py": "ebf6827ce8c291912003bf2de04a373188d6316f7ea4af6f18fcd1f7844c3364",
+    "reproduce.sh": "913e2a9a54a13509d4cfcf76a47c87f0216f5c4bdb31fa65271f0aff7333e4b1",
+    "scorer-tests/test_scorer.py": "5ac4ba0279711b7d4e29d62a82c1e5b0f967cc8dcab66bc0c5df9c581ba24463"
+  },
+  "validation_used_for_tuning": false
+}

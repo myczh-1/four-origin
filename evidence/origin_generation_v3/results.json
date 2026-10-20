@@ -1,0 +1,1422 @@
+{
+  "config": {
+    "model": "Qwen/Qwen3-0.6B",
+    "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "seed": 31019,
+    "adapter_init_seed": 2026,
+    "offline_cached_revision": true,
+    "steps": 200,
+    "batch_size": 2,
+    "lr": 0.0002,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "max_new_tokens": 96,
+    "greedy": true,
+    "cache": true,
+    "checkpoint_selection": "fixed final step 200; validation does not select test results",
+    "base_condition": "untuned pretrained model WITH the same textual source tags as B",
+    "scope": "single turn, two supplied claims; inference retention refers to supplied candidate inferences, not novel deductive reasoning"
+  },
+  "data": {
+    "splits": {
+      "train": {
+        "pairs": 320,
+        "records": 640,
+        "sha256": "0ab2b1686e17b818841e3a068b2e1cc9aed8ae11baa8673286c50a49d7304edf"
+      },
+      "validation": {
+        "pairs": 24,
+        "records": 48,
+        "sha256": "c55fd5511cb28f0e7213c00cbad5720d9a6a5d6384cceedbe3f0ed7cfafe2fee"
+      },
+      "transfer": {
+        "pairs": 12,
+        "records": 24,
+        "sha256": "6fe89976d49ec4bbcc3019e6854af71d8917d23747946ed22a5f83c09073e75f"
+      },
+      "test": {
+        "pairs": 48,
+        "records": 96,
+        "sha256": "6a64f0ee313c026f6b02e808f2d8ed3ff57697b07ab1678bed0b14044e9bc073"
+      },
+      "cross_template": {
+        "pairs": 48,
+        "records": 96,
+        "sha256": "4037c4bae6cc0c5d854fdeb0c43d3cedc1eeff7b18bde4f0b698af0612e00b74"
+      }
+    },
+    "unique_entities": 452,
+    "pair_token_identity": true,
+    "swap_matches_partner": true,
+    "value_domains_shared": true
+  },
+  "protocol": {
+    "declared_before_test_evaluation": true,
+    "interpretation_gate": {
+      "fully_scorable_rate_min": 0.95,
+      "external_fact_retention_min": 0.9,
+      "requested_supplied_inference_retention_min": 0.9
+    },
+    "primary_measure": "Unsupported supplied claims asserted as facts, divided by a fixed count of unsupported input claims; unresolved readings are not treated as clean.",
+    "additional_measures": [
+      "SELF misattribution",
+      "uncertain external claim retention",
+      "omissions",
+      "unparsed extra statements",
+      "strict reference answer agreement"
+    ],
+    "limitations": [
+      "Automatic scores are controlled-language lower bounds, not unrestricted semantic hallucination rates.",
+      "Unparsed or unmatched output requires separate review; low detected hallucination plus poor coverage is not success.",
+      "Inference retention measures preservation of supplied candidates, not novel reasoning quality.",
+      "Base receives textual source tags just like Text-SFT; source information is not deliberately withheld.",
+      "No multiple-turn inference propagation in this phase."
+    ],
+    "training_selection": "Both fresh models train exactly 200 steps over the same 200 pairs. No test-based extra steps or checkpoint selection."
+  },
+  "training": {
+    "text": {
+      "steps": 200,
+      "pairs_seen": 200,
+      "samples_seen": 400,
+      "prompt_tokens": 43242,
+      "answer_tokens": 16862,
+      "seconds": 143.22800404194277,
+      "validation": [
+        {
+          "step": 100,
+          "counts": {
+            "records": 48,
+            "fully_scorable": 48,
+            "exact_target": 48,
+            "unparsed_records": 0,
+            "atoms": 96,
+            "omitted": 0,
+            "unresolved": 0,
+            "unsupported_total": 60,
+            "asserted_without_support": 0,
+            "unsupported_unresolved": 0,
+            "uncertain_external_total": 12,
+            "uncertain_external_retained": 12,
+            "self_total": 48,
+            "self_promoted": 0,
+            "requested_inference_total": 24,
+            "requested_inference_retained": 24,
+            "external_total": 36,
+            "external_retained": 36
+          },
+          "fully_scorable_rate": 1.0,
+          "exact_target_rate": 1.0,
+          "unsupported_assertion_rate_lower_bound": 0.0,
+          "self_misattribution_rate_lower_bound": 0.0,
+          "external_fact_retention": 1.0,
+          "requested_supplied_inference_retention": 1.0,
+          "uncertain_external_retention": 1.0,
+          "by_case_exact": {
+            "mixed": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "conflict": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "uncertain": {
+              "records": 16,
+              "exact_target": 16
+            }
+          }
+        },
+        {
+          "step": 200,
+          "counts": {
+            "records": 48,
+            "fully_scorable": 48,
+            "exact_target": 48,
+            "unparsed_records": 0,
+            "atoms": 96,
+            "omitted": 0,
+            "unresolved": 0,
+            "unsupported_total": 60,
+            "asserted_without_support": 0,
+            "unsupported_unresolved": 0,
+            "uncertain_external_total": 12,
+            "uncertain_external_retained": 12,
+            "self_total": 48,
+            "self_promoted": 0,
+            "requested_inference_total": 24,
+            "requested_inference_retained": 24,
+            "external_total": 36,
+            "external_retained": 36
+          },
+          "fully_scorable_rate": 1.0,
+          "exact_target_rate": 1.0,
+          "unsupported_assertion_rate_lower_bound": 0.0,
+          "self_misattribution_rate_lower_bound": 0.0,
+          "external_fact_retention": 1.0,
+          "requested_supplied_inference_retention": 1.0,
+          "uncertain_external_retention": 1.0,
+          "by_case_exact": {
+            "mixed": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "conflict": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "uncertain": {
+              "records": 16,
+              "exact_target": 16
+            }
+          }
+        }
+      ],
+      "trainable_parameters": 1146880,
+      "updates": {
+        "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight": 0.18462225794792175,
+        "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.26585653424263,
+        "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight": 0.23369324207305908,
+        "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight": 0.20283345878124237,
+        "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight": 0.20862773060798645,
+        "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight": 0.26299625635147095,
+        "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight": 0.22775466740131378,
+        "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight": 0.1928538829088211,
+        "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight": 0.24568185210227966,
+        "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight": 0.27784422039985657,
+        "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight": 0.22739624977111816,
+        "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight": 0.20166952908039093,
+        "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight": 0.21609410643577576,
+        "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight": 0.2644885182380676,
+        "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight": 0.2720107138156891,
+        "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight": 0.21413615345954895,
+        "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight": 0.24882173538208008,
+        "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight": 0.297415167093277,
+        "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight": 0.26723483204841614,
+        "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight": 0.210433229804039,
+        "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight": 0.2615533173084259,
+        "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight": 0.3066301643848419,
+        "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight": 0.24945896863937378,
+        "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight": 0.2082042545080185,
+        "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight": 0.19640856981277466,
+        "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight": 0.2689422070980072,
+        "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight": 0.23432514071464539,
+        "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight": 0.20101194083690643,
+        "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight": 0.22705790400505066,
+        "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight": 0.29724833369255066,
+        "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight": 0.2389410436153412,
+        "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight": 0.19864718616008759,
+        "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight": 0.17997144162654877,
+        "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight": 0.2599774897098541,
+        "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight": 0.2312387377023697,
+        "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight": 0.2044529914855957,
+        "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight": 0.2832915484905243,
+        "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight": 0.30542704463005066,
+        "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight": 0.3194863200187683,
+        "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight": 0.23079988360404968,
+        "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight": 0.24758468568325043,
+        "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight": 0.2973051965236664,
+        "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight": 0.25394123792648315,
+        "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight": 0.21754804253578186,
+        "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight": 0.23252616822719574,
+        "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight": 0.3097507357597351,
+        "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight": 0.29546549916267395,
+        "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight": 0.2325306385755539,
+        "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight": 0.2541276812553406,
+        "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight": 0.2990461587905884,
+        "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight": 0.243718221783638,
+        "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight": 0.2272941619157791,
+        "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight": 0.2625391483306885,
+        "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight": 0.3203304409980774,
+        "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight": 0.25816094875335693,
+        "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight": 0.2361903041601181,
+        "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight": 0.2170865833759308,
+        "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight": 0.3069392442703247,
+        "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight": 0.27137064933776855,
+        "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight": 0.23877668380737305,
+        "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight": 0.29117870330810547,
+        "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight": 0.3409331738948822,
+        "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight": 0.28723567724227905,
+        "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight": 0.24752551317214966,
+        "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight": 0.31615519523620605,
+        "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight": 0.3690579831600189,
+        "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight": 0.3454899489879608,
+        "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight": 0.26269975304603577,
+        "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight": 0.36845269799232483,
+        "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight": 0.38201168179512024,
+        "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight": 0.3588769733905792,
+        "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight": 0.2793177664279938,
+        "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight": 0.26800453662872314,
+        "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight": 0.36062684655189514,
+        "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight": 0.389041006565094,
+        "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight": 0.2862485349178314,
+        "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight": 0.3680163025856018,
+        "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight": 0.3986233174800873,
+        "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight": 0.3691736161708832,
+        "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight": 0.2922157645225525,
+        "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight": 0.2629353404045105,
+        "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight": 0.3734528124332428,
+        "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight": 0.37597498297691345,
+        "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight": 0.30314427614212036,
+        "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight": 0.3301413655281067,
+        "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight": 0.3888826072216034,
+        "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight": 0.38536879420280457,
+        "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight": 0.31234249472618103,
+        "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight": 0.35086992383003235,
+        "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight": 0.429821640253067,
+        "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight": 0.38956552743911743,
+        "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight": 0.30762070417404175,
+        "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight": 0.3445620536804199,
+        "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight": 0.41486915946006775,
+        "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight": 0.3699585199356079,
+        "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight": 0.31783294677734375,
+        "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight": 0.4353346824645996,
+        "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight": 0.4436473846435547,
+        "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight": 0.3628721833229065,
+        "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight": 0.3148592710494995,
+        "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight": 0.3869691789150238,
+        "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight": 0.4117543697357178,
+        "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight": 0.3831573724746704,
+        "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight": 0.31996461749076843,
+        "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight": 0.31641215085983276,
+        "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight": 0.397236168384552,
+        "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight": 0.38262444734573364,
+        "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight": 0.3334449529647827,
+        "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight": 0.3591647148132324,
+        "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight": 0.48139670491218567,
+        "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight": 0.3944513499736786,
+        "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight": 0.3383296728134155
+      }
+    },
+    "origin": {
+      "steps": 200,
+      "pairs_seen": 200,
+      "samples_seen": 400,
+      "prompt_tokens": 40842,
+      "answer_tokens": 16862,
+      "seconds": 139.32818483305164,
+      "validation": [
+        {
+          "step": 100,
+          "counts": {
+            "records": 48,
+            "fully_scorable": 48,
+            "exact_target": 32,
+            "unparsed_records": 0,
+            "atoms": 96,
+            "omitted": 0,
+            "unresolved": 0,
+            "unsupported_total": 60,
+            "asserted_without_support": 13,
+            "unsupported_unresolved": 0,
+            "uncertain_external_total": 12,
+            "uncertain_external_retained": 7,
+            "self_total": 48,
+            "self_promoted": 16,
+            "requested_inference_total": 24,
+            "requested_inference_retained": 15,
+            "external_total": 36,
+            "external_retained": 25
+          },
+          "fully_scorable_rate": 1.0,
+          "exact_target_rate": 0.6666666666666666,
+          "unsupported_assertion_rate_lower_bound": 0.21666666666666667,
+          "self_misattribution_rate_lower_bound": 0.3333333333333333,
+          "external_fact_retention": 0.6944444444444444,
+          "requested_supplied_inference_retention": 0.625,
+          "uncertain_external_retention": 0.5833333333333334,
+          "by_case_exact": {
+            "mixed": {
+              "records": 16,
+              "exact_target": 12
+            },
+            "conflict": {
+              "records": 16,
+              "exact_target": 9
+            },
+            "uncertain": {
+              "records": 16,
+              "exact_target": 11
+            }
+          }
+        },
+        {
+          "step": 200,
+          "counts": {
+            "records": 48,
+            "fully_scorable": 47,
+            "exact_target": 45,
+            "unparsed_records": 1,
+            "atoms": 96,
+            "omitted": 1,
+            "unresolved": 0,
+            "unsupported_total": 60,
+            "asserted_without_support": 1,
+            "unsupported_unresolved": 0,
+            "uncertain_external_total": 12,
+            "uncertain_external_retained": 11,
+            "self_total": 48,
+            "self_promoted": 1,
+            "requested_inference_total": 24,
+            "requested_inference_retained": 24,
+            "external_total": 36,
+            "external_retained": 36
+          },
+          "fully_scorable_rate": 0.9791666666666666,
+          "exact_target_rate": 0.9375,
+          "unsupported_assertion_rate_lower_bound": 0.016666666666666666,
+          "self_misattribution_rate_lower_bound": 0.020833333333333332,
+          "external_fact_retention": 1.0,
+          "requested_supplied_inference_retention": 1.0,
+          "uncertain_external_retention": 0.9166666666666666,
+          "by_case_exact": {
+            "mixed": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "conflict": {
+              "records": 16,
+              "exact_target": 16
+            },
+            "uncertain": {
+              "records": 16,
+              "exact_target": 13
+            }
+          }
+        }
+      ],
+      "trainable_parameters": 1150976,
+      "updates": {
+        "lm.base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight": 0.303072452545166,
+        "lm.base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": 0.38025563955307007,
+        "lm.base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight": 0.2870281934738159,
+        "lm.base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight": 0.22428672015666962,
+        "lm.base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight": 0.23233111202716827,
+        "lm.base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight": 0.2959555983543396,
+        "lm.base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight": 0.19398202002048492,
+        "lm.base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight": 0.20343394577503204,
+        "lm.base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight": 0.2587081491947174,
+        "lm.base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight": 0.332762748003006,
+        "lm.base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight": 0.22235029935836792,
+        "lm.base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight": 0.21822641789913177,
+        "lm.base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight": 0.25452855229377747,
+        "lm.base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight": 0.3095369338989258,
+        "lm.base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight": 0.223186194896698,
+        "lm.base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight": 0.21533845365047455,
+        "lm.base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight": 0.22924181818962097,
+        "lm.base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight": 0.3066037893295288,
+        "lm.base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight": 0.28590473532676697,
+        "lm.base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight": 0.22581346333026886,
+        "lm.base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight": 0.2585431635379791,
+        "lm.base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight": 0.32886961102485657,
+        "lm.base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight": 0.24294839799404144,
+        "lm.base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight": 0.21959353983402252,
+        "lm.base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight": 0.23759034276008606,
+        "lm.base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight": 0.3091884255409241,
+        "lm.base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight": 0.24959000945091248,
+        "lm.base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight": 0.21773593127727509,
+        "lm.base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight": 0.2443070262670517,
+        "lm.base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight": 0.31936782598495483,
+        "lm.base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight": 0.23452897369861603,
+        "lm.base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight": 0.2192099541425705,
+        "lm.base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight": 0.20867355167865753,
+        "lm.base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight": 0.29594799876213074,
+        "lm.base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight": 0.2368859052658081,
+        "lm.base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight": 0.2192801833152771,
+        "lm.base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight": 0.27720630168914795,
+        "lm.base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight": 0.3273247480392456,
+        "lm.base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight": 0.2715364396572113,
+        "lm.base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight": 0.2376061975955963,
+        "lm.base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight": 0.25248050689697266,
+        "lm.base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight": 0.32134169340133667,
+        "lm.base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight": 0.29315462708473206,
+        "lm.base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight": 0.24259823560714722,
+        "lm.base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight": 0.28381219506263733,
+        "lm.base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight": 0.3581194579601288,
+        "lm.base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight": 0.2693674564361572,
+        "lm.base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight": 0.2502416968345642,
+        "lm.base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight": 0.22399888932704926,
+        "lm.base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight": 0.297699898481369,
+        "lm.base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight": 0.24490763247013092,
+        "lm.base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight": 0.24187076091766357,
+        "lm.base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight": 0.26665422320365906,
+        "lm.base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight": 0.34007030725479126,
+        "lm.base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight": 0.25873592495918274,
+        "lm.base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight": 0.251003235578537,
+        "lm.base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight": 0.24920997023582458,
+        "lm.base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight": 0.33683255314826965,
+        "lm.base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight": 0.2826268672943115,
+        "lm.base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight": 0.25333547592163086,
+        "lm.base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight": 0.3219042122364044,
+        "lm.base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight": 0.38684654235839844,
+        "lm.base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight": 0.3456997275352478,
+        "lm.base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight": 0.2739962041378021,
+        "lm.base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight": 0.31082138419151306,
+        "lm.base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight": 0.39769142866134644,
+        "lm.base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight": 0.29055410623550415,
+        "lm.base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight": 0.26817959547042847,
+        "lm.base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight": 0.2879171371459961,
+        "lm.base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight": 0.38148438930511475,
+        "lm.base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight": 0.3756655752658844,
+        "lm.base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight": 0.3002779185771942,
+        "lm.base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight": 0.2773527204990387,
+        "lm.base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight": 0.3749420940876007,
+        "lm.base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight": 0.38470613956451416,
+        "lm.base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight": 0.30887743830680847,
+        "lm.base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight": 0.37096497416496277,
+        "lm.base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight": 0.42845287919044495,
+        "lm.base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight": 0.33268940448760986,
+        "lm.base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight": 0.2984689176082611,
+        "lm.base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight": 0.31467634439468384,
+        "lm.base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight": 0.4312179386615753,
+        "lm.base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight": 0.3798604905605316,
+        "lm.base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight": 0.3227316737174988,
+        "lm.base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight": 0.3590002655982971,
+        "lm.base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight": 0.4390869438648224,
+        "lm.base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight": 0.34987977147102356,
+        "lm.base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight": 0.3132256865501404,
+        "lm.base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight": 0.41750451922416687,
+        "lm.base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight": 0.49610939621925354,
+        "lm.base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight": 0.4345134198665619,
+        "lm.base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight": 0.3350805938243866,
+        "lm.base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight": 0.3884328305721283,
+        "lm.base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight": 0.4751635789871216,
+        "lm.base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight": 0.4228054881095886,
+        "lm.base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight": 0.342038094997406,
+        "lm.base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight": 0.3646700978279114,
+        "lm.base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight": 0.4240201413631439,
+        "lm.base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight": 0.35961204767227173,
+        "lm.base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight": 0.31999003887176514,
+        "lm.base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight": 0.3850317597389221,
+        "lm.base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight": 0.42875587940216064,
+        "lm.base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight": 0.42927610874176025,
+        "lm.base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight": 0.3352098762989044,
+        "lm.base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight": 0.33875367045402527,
+        "lm.base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight": 0.41381874680519104,
+        "lm.base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight": 0.3930860161781311,
+        "lm.base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight": 0.34357935190200806,
+        "lm.base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight": 0.41117656230926514,
+        "lm.base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight": 0.48459598422050476,
+        "lm.base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight": 0.3963300883769989,
+        "lm.base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight": 0.3367338180541992,
+        "origin_embedding.weight": 0.23597343266010284
+      }
+    }
+  },
+  "transfer": {
+    "metrics": {
+      "v2_origin": {
+        "counts": {
+          "records": 24,
+          "fully_scorable": 0,
+          "exact_target": 0,
+          "unparsed_records": 24,
+          "atoms": 48,
+          "omitted": 44,
+          "unresolved": 0,
+          "external_total": 18,
+          "external_retained": 1,
+          "unsupported_total": 30,
+          "asserted_without_support": 1,
+          "unsupported_unresolved": 0,
+          "self_total": 24,
+          "self_promoted": 0,
+          "requested_inference_total": 12,
+          "requested_inference_retained": 1,
+          "uncertain_external_total": 6,
+          "uncertain_external_retained": 0
+        },
+        "fully_scorable_rate": 0.0,
+        "exact_target_rate": 0.0,
+        "unsupported_assertion_rate_lower_bound": 0.03333333333333333,
+        "self_misattribution_rate_lower_bound": 0.0,
+        "external_fact_retention": 0.05555555555555555,
+        "requested_supplied_inference_retention": 0.08333333333333333,
+        "uncertain_external_retention": 0.0,
+        "by_case_exact": {
+          "mixed": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "conflict": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "uncertain": {
+            "records": 8,
+            "exact_target": 0
+          }
+        }
+      },
+      "v2_origin_zero": {
+        "counts": {
+          "records": 24,
+          "fully_scorable": 0,
+          "exact_target": 0,
+          "unparsed_records": 24,
+          "atoms": 48,
+          "omitted": 38,
+          "unresolved": 4,
+          "external_total": 18,
+          "external_retained": 1,
+          "unsupported_total": 30,
+          "asserted_without_support": 1,
+          "unsupported_unresolved": 2,
+          "self_total": 24,
+          "self_promoted": 1,
+          "requested_inference_total": 12,
+          "requested_inference_retained": 2,
+          "uncertain_external_total": 6,
+          "uncertain_external_retained": 0
+        },
+        "fully_scorable_rate": 0.0,
+        "exact_target_rate": 0.0,
+        "unsupported_assertion_rate_lower_bound": 0.03333333333333333,
+        "self_misattribution_rate_lower_bound": 0.041666666666666664,
+        "external_fact_retention": 0.05555555555555555,
+        "requested_supplied_inference_retention": 0.16666666666666666,
+        "uncertain_external_retention": 0.0,
+        "by_case_exact": {
+          "mixed": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "conflict": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "uncertain": {
+            "records": 8,
+            "exact_target": 0
+          }
+        }
+      },
+      "v2_text": {
+        "counts": {
+          "records": 24,
+          "fully_scorable": 4,
+          "exact_target": 0,
+          "unparsed_records": 19,
+          "atoms": 48,
+          "omitted": 30,
+          "unresolved": 0,
+          "external_total": 18,
+          "external_retained": 6,
+          "unsupported_total": 30,
+          "asserted_without_support": 3,
+          "unsupported_unresolved": 0,
+          "self_total": 24,
+          "self_promoted": 2,
+          "requested_inference_total": 12,
+          "requested_inference_retained": 3,
+          "uncertain_external_total": 6,
+          "uncertain_external_retained": 0
+        },
+        "fully_scorable_rate": 0.16666666666666666,
+        "exact_target_rate": 0.0,
+        "unsupported_assertion_rate_lower_bound": 0.1,
+        "self_misattribution_rate_lower_bound": 0.08333333333333333,
+        "external_fact_retention": 0.3333333333333333,
+        "requested_supplied_inference_retention": 0.25,
+        "uncertain_external_retention": 0.0,
+        "by_case_exact": {
+          "mixed": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "conflict": {
+            "records": 8,
+            "exact_target": 0
+          },
+          "uncertain": {
+            "records": 8,
+            "exact_target": 0
+          }
+        }
+      }
+    },
+    "cache_parity_passed": true,
+    "training_performed": false
+  },
+  "metrics": {
+    "base/normal/test": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 0,
+        "exact_target": 0,
+        "unparsed_records": 90,
+        "atoms": 192,
+        "omitted": 17,
+        "unresolved": 115,
+        "external_total": 72,
+        "external_retained": 22,
+        "unsupported_total": 120,
+        "asserted_without_support": 24,
+        "unsupported_unresolved": 77,
+        "self_total": 96,
+        "self_promoted": 20,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 5,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.0,
+      "exact_target_rate": 0.0,
+      "unsupported_assertion_rate_lower_bound": 0.2,
+      "self_misattribution_rate_lower_bound": 0.20833333333333334,
+      "external_fact_retention": 0.3055555555555556,
+      "requested_supplied_inference_retention": 0.10416666666666667,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 0
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 0
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 0
+        }
+      },
+      "self_asserted_as_fact_rate": 0.20833333333333334,
+      "self_asserted_as_fact_count": 20,
+      "all_attributions_correct_rate": 0.0,
+      "pair_all_attributions_correct_rate": 0.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 1.0,
+      "interpretation_gate_passed": false
+    },
+    "base/normal/cross_template": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 5,
+        "exact_target": 0,
+        "unparsed_records": 86,
+        "atoms": 192,
+        "omitted": 19,
+        "unresolved": 65,
+        "external_total": 72,
+        "external_retained": 37,
+        "unsupported_total": 120,
+        "asserted_without_support": 54,
+        "unsupported_unresolved": 43,
+        "self_total": 96,
+        "self_promoted": 47,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 7,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.052083333333333336,
+      "exact_target_rate": 0.0,
+      "unsupported_assertion_rate_lower_bound": 0.45,
+      "self_misattribution_rate_lower_bound": 0.4895833333333333,
+      "external_fact_retention": 0.5138888888888888,
+      "requested_supplied_inference_retention": 0.14583333333333334,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 0
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 0
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 0
+        }
+      },
+      "self_asserted_as_fact_rate": 0.4895833333333333,
+      "self_asserted_as_fact_count": 47,
+      "all_attributions_correct_rate": 0.010416666666666666,
+      "pair_all_attributions_correct_rate": 0.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 1.0,
+      "interpretation_gate_passed": false
+    },
+    "text/normal/test": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 96,
+        "exact_target": 96,
+        "unparsed_records": 0,
+        "atoms": 192,
+        "omitted": 0,
+        "unresolved": 0,
+        "external_total": 72,
+        "external_retained": 72,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 48,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 24
+      },
+      "fully_scorable_rate": 1.0,
+      "exact_target_rate": 1.0,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 1.0,
+      "requested_supplied_inference_retention": 1.0,
+      "uncertain_external_retention": 1.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 32
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 1.0,
+      "pair_all_attributions_correct_rate": 1.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": true
+    },
+    "text/normal/cross_template": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 95,
+        "exact_target": 78,
+        "unparsed_records": 1,
+        "atoms": 192,
+        "omitted": 2,
+        "unresolved": 0,
+        "external_total": 72,
+        "external_retained": 71,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 47,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 24
+      },
+      "fully_scorable_rate": 0.9895833333333334,
+      "exact_target_rate": 0.8125,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 0.9861111111111112,
+      "requested_supplied_inference_retention": 0.9791666666666666,
+      "uncertain_external_retention": 1.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 26
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 28
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 24
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 0.9895833333333334,
+      "pair_all_attributions_correct_rate": 0.9791666666666666,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": true
+    },
+    "origin/normal/test": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 96,
+        "exact_target": 96,
+        "unparsed_records": 0,
+        "atoms": 192,
+        "omitted": 0,
+        "unresolved": 0,
+        "external_total": 72,
+        "external_retained": 72,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 48,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 24
+      },
+      "fully_scorable_rate": 1.0,
+      "exact_target_rate": 1.0,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 1.0,
+      "requested_supplied_inference_retention": 1.0,
+      "uncertain_external_retention": 1.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 32
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 1.0,
+      "pair_all_attributions_correct_rate": 1.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": true
+    },
+    "origin/zero/test": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 96,
+        "exact_target": 48,
+        "unparsed_records": 0,
+        "atoms": 192,
+        "omitted": 0,
+        "unresolved": 0,
+        "external_total": 72,
+        "external_retained": 40,
+        "unsupported_total": 120,
+        "asserted_without_support": 40,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 48,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 24,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 8
+      },
+      "fully_scorable_rate": 1.0,
+      "exact_target_rate": 0.5,
+      "unsupported_assertion_rate_lower_bound": 0.3333333333333333,
+      "self_misattribution_rate_lower_bound": 0.5,
+      "external_fact_retention": 0.5555555555555556,
+      "requested_supplied_inference_retention": 0.5,
+      "uncertain_external_retention": 0.3333333333333333,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 16
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 16
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 16
+        }
+      },
+      "self_asserted_as_fact_rate": 0.4166666666666667,
+      "self_asserted_as_fact_count": 40,
+      "all_attributions_correct_rate": 0.5,
+      "pair_all_attributions_correct_rate": 0.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": false
+    },
+    "origin/swap/test": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 96,
+        "exact_target": 96,
+        "unparsed_records": 0,
+        "atoms": 192,
+        "omitted": 0,
+        "unresolved": 0,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 48,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 24,
+        "external_total": 72,
+        "external_retained": 72
+      },
+      "fully_scorable_rate": 1.0,
+      "exact_target_rate": 1.0,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 1.0,
+      "requested_supplied_inference_retention": 1.0,
+      "uncertain_external_retention": 1.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 32
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 32
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 1.0,
+      "pair_all_attributions_correct_rate": 1.0,
+      "canonical_novel_value_mentions": [],
+      "canonical_novel_value_count": 0,
+      "novel_value_record_rate_lower_bound": 0.0,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": true
+    },
+    "origin/normal/cross_template": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 90,
+        "exact_target": 49,
+        "unparsed_records": 5,
+        "atoms": 192,
+        "omitted": 6,
+        "unresolved": 1,
+        "external_total": 72,
+        "external_retained": 70,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 47,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 23
+      },
+      "fully_scorable_rate": 0.9375,
+      "exact_target_rate": 0.5104166666666666,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 0.9722222222222222,
+      "requested_supplied_inference_retention": 0.9791666666666666,
+      "uncertain_external_retention": 0.9583333333333334,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 14
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 25
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 10
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 0.9375,
+      "pair_all_attributions_correct_rate": 0.875,
+      "canonical_novel_value_mentions": [
+        {
+          "pair_id": "cross_template-0026",
+          "source_condition": [
+            2,
+            3
+          ],
+          "key": "log path",
+          "generated_value": "/srv/23af190b466/events.log",
+          "allowed_values": [
+            "/srv/23af190b46/events.log"
+          ],
+          "attribution": "The reference suggests that",
+          "sentence": "The reference suggests that the log path is /srv/23af190b466/events.log, but this is not confirmed."
+        },
+        {
+          "pair_id": "cross_template-0029",
+          "source_condition": [
+            2,
+            3
+          ],
+          "key": "log path",
+          "generated_value": "events.log",
+          "allowed_values": [
+            "/srv/5b8f818412/events.log"
+          ],
+          "attribution": "It is possible that",
+          "sentence": "It is possible that the log path is events.log, but this is not confirmed by the reference."
+        },
+        {
+          "pair_id": "cross_template-0047",
+          "source_condition": [
+            2,
+            3
+          ],
+          "key": "log path",
+          "generated_value": "events.log",
+          "allowed_values": [
+            "/srv/5a83fdd5d3/events.log"
+          ],
+          "attribution": "It is possible that",
+          "sentence": "It is possible that the log path is events.log, but this is not confirmed by the reference."
+        }
+      ],
+      "canonical_novel_value_count": 3,
+      "novel_value_record_rate_lower_bound": 0.03125,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": false
+    },
+    "origin/zero/cross_template": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 94,
+        "exact_target": 32,
+        "unparsed_records": 2,
+        "atoms": 192,
+        "omitted": 2,
+        "unresolved": 0,
+        "external_total": 72,
+        "external_retained": 47,
+        "unsupported_total": 120,
+        "asserted_without_support": 47,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 47,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 24,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 0
+      },
+      "fully_scorable_rate": 0.9791666666666666,
+      "exact_target_rate": 0.3333333333333333,
+      "unsupported_assertion_rate_lower_bound": 0.39166666666666666,
+      "self_misattribution_rate_lower_bound": 0.4895833333333333,
+      "external_fact_retention": 0.6527777777777778,
+      "requested_supplied_inference_retention": 0.5,
+      "uncertain_external_retention": 0.0,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 10
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 13
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 9
+        }
+      },
+      "self_asserted_as_fact_rate": 0.4895833333333333,
+      "self_asserted_as_fact_count": 47,
+      "all_attributions_correct_rate": 0.4895833333333333,
+      "pair_all_attributions_correct_rate": 0.0,
+      "canonical_novel_value_mentions": [
+        {
+          "pair_id": "cross_template-0030",
+          "source_condition": [
+            2,
+            3
+          ],
+          "key": "owner",
+          "generated_value": "team_1c7d809f.7",
+          "allowed_values": [
+            "team_1c7d809f"
+          ],
+          "attribution": "The reference confirms that",
+          "sentence": "The reference confirms that the owner is team_1c7d809f.7."
+        },
+        {
+          "pair_id": "cross_template-0030",
+          "source_condition": [
+            3,
+            2
+          ],
+          "key": "owner",
+          "generated_value": "team_1c7d809f.7",
+          "allowed_values": [
+            "team_1c7d809f"
+          ],
+          "attribution": "The reference confirms that",
+          "sentence": "The reference confirms that the owner is team_1c7d809f.7."
+        }
+      ],
+      "canonical_novel_value_count": 2,
+      "novel_value_record_rate_lower_bound": 0.020833333333333332,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": false
+    },
+    "origin/swap/cross_template": {
+      "counts": {
+        "records": 96,
+        "fully_scorable": 90,
+        "exact_target": 49,
+        "unparsed_records": 5,
+        "atoms": 192,
+        "omitted": 6,
+        "unresolved": 1,
+        "unsupported_total": 120,
+        "asserted_without_support": 0,
+        "unsupported_unresolved": 0,
+        "self_total": 96,
+        "self_promoted": 0,
+        "requested_inference_total": 48,
+        "requested_inference_retained": 47,
+        "uncertain_external_total": 24,
+        "uncertain_external_retained": 23,
+        "external_total": 72,
+        "external_retained": 70
+      },
+      "fully_scorable_rate": 0.9375,
+      "exact_target_rate": 0.5104166666666666,
+      "unsupported_assertion_rate_lower_bound": 0.0,
+      "self_misattribution_rate_lower_bound": 0.0,
+      "external_fact_retention": 0.9722222222222222,
+      "requested_supplied_inference_retention": 0.9791666666666666,
+      "uncertain_external_retention": 0.9583333333333334,
+      "by_case_exact": {
+        "mixed": {
+          "records": 32,
+          "exact_target": 14
+        },
+        "conflict": {
+          "records": 32,
+          "exact_target": 25
+        },
+        "uncertain": {
+          "records": 32,
+          "exact_target": 10
+        }
+      },
+      "self_asserted_as_fact_rate": 0.0,
+      "self_asserted_as_fact_count": 0,
+      "all_attributions_correct_rate": 0.9375,
+      "pair_all_attributions_correct_rate": 0.875,
+      "canonical_novel_value_mentions": [
+        {
+          "pair_id": "cross_template-0026",
+          "source_condition": [
+            3,
+            2
+          ],
+          "key": "log path",
+          "generated_value": "/srv/23af190b466/events.log",
+          "allowed_values": [
+            "/srv/23af190b46/events.log"
+          ],
+          "attribution": "The reference suggests that",
+          "sentence": "The reference suggests that the log path is /srv/23af190b466/events.log, but this is not confirmed."
+        },
+        {
+          "pair_id": "cross_template-0029",
+          "source_condition": [
+            3,
+            2
+          ],
+          "key": "log path",
+          "generated_value": "events.log",
+          "allowed_values": [
+            "/srv/5b8f818412/events.log"
+          ],
+          "attribution": "It is possible that",
+          "sentence": "It is possible that the log path is events.log, but this is not confirmed by the reference."
+        },
+        {
+          "pair_id": "cross_template-0047",
+          "source_condition": [
+            3,
+            2
+          ],
+          "key": "log path",
+          "generated_value": "events.log",
+          "allowed_values": [
+            "/srv/5a83fdd5d3/events.log"
+          ],
+          "attribution": "It is possible that",
+          "sentence": "It is possible that the log path is events.log, but this is not confirmed by the reference."
+        }
+      ],
+      "canonical_novel_value_count": 3,
+      "novel_value_record_rate_lower_bound": 0.03125,
+      "truncated_rate": 0.0,
+      "interpretation_gate_passed": false
+    }
+  },
+  "diagnostics": {
+    "origin_nonzero_gradient_steps": 200,
+    "origin_weight_update_norm": 0.23597343266010284,
+    "lora_weight_update_norm": 3.388860717521007,
+    "cache_checks": {
+      "base": true,
+      "text": true,
+      "origin": true
+    },
+    "source_checks": {
+      "test": {
+        "zero_pair_outputs_identical": true,
+        "swap_matches_normal_partner": true,
+        "normal_zero_answer_changed_rate": 0.5,
+        "normal_swap_answer_changed_rate": 1.0,
+        "zero_minus_normal_unsupported_assertion_rate": 0.3333333333333333
+      },
+      "cross_template": {
+        "zero_pair_outputs_identical": true,
+        "swap_matches_normal_partner": true,
+        "normal_zero_answer_changed_rate": 0.7083333333333334,
+        "normal_swap_answer_changed_rate": 1.0,
+        "zero_minus_normal_unsupported_assertion_rate": 0.39166666666666666
+      }
+    },
+    "protected_file_count": 78,
+    "previous_rounds_unchanged": true
+  },
+  "manual_review": {
+    "scope": "All automatically incomplete normal cross-template outputs for trained text and origin models; not a complete semantic audit of untuned Base outputs.",
+    "scoring_policy": "Exact project identifiers and complete paths matter; no training or scoring exception added for these samples.",
+    "reviewed": [
+      {
+        "condition": "text/normal/cross_template",
+        "pair_id": "cross_template-0016",
+        "sources": [
+          3,
+          2
+        ],
+        "finding": "Both distinct owner identifiers collapse to 'team'; external fact and supplied inference are not faithfully retained.",
+        "type": "identifier_loss"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0011",
+        "sources": [
+          3,
+          2
+        ],
+        "finding": "Full SELF log path is reduced to 'the events.log'; qualifier retained, value not retained.",
+        "type": "path_truncation"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0016",
+        "sources": [
+          2,
+          3
+        ],
+        "finding": "Both exact team identifiers replace underscores with spaces; attribution markers are correct but literal identifiers are changed.",
+        "type": "identifier_change"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0026",
+        "sources": [
+          2,
+          3
+        ],
+        "finding": "Reference's uncertain path /srv/23af190b46/events.log becomes /srv/23af190b466/events.log; uncertainty retained but reference is credited with an unsupported value.",
+        "type": "novel_value_misattributed_to_reference"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0029",
+        "sources": [
+          2,
+          3
+        ],
+        "finding": "Full SELF path reduced to events.log; qualifier retained, value not retained.",
+        "type": "path_truncation"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0030",
+        "sources": [
+          3,
+          2
+        ],
+        "finding": "Correct owner identifier appears but the relation becomes 'the value team is ...'; owner relation is not clearly stated.",
+        "type": "malformed_relation"
+      },
+      {
+        "condition": "origin/normal/cross_template",
+        "pair_id": "cross_template-0047",
+        "sources": [
+          2,
+          3
+        ],
+        "finding": "Full SELF path reduced to events.log; qualifier retained, value not retained.",
+        "type": "path_truncation"
+      }
+    ],
+    "base_spot_check": {
+      "scope": "First 10 ordinary-test outputs only; illustrative, not a population estimate.",
+      "examples": [
+        {
+          "pair_id": "test-0001",
+          "sources": [
+            3,
+            2
+          ],
+          "finding": "Calls SELF PostgreSQL confirmed while calling EXTERNAL SQLite unverified; then repeats."
+        },
+        {
+          "pair_id": "test-0004",
+          "sources": [
+            3,
+            2
+          ],
+          "finding": "Calls SELF pool limit 24 confirmed and EXTERNAL pool limit 32 unverified."
+        }
+      ]
+    }
+  },
+  "scoring_note": "Final results are rescored from unchanged raw outputs. Input echoes/questions are unresolved; numeric and identifier suffix collisions are excluded. Streaming logs retain initial score snapshots.",
+  "source_sha256": {
+    "run_v3.py": "30d219aaf2e60a2f35b13b8fc7066ed14597be33f83d0ae68cee1d486a5e78ca",
+    "summarize.py": "ea02413ae901afc44354f056a24d1631a2059442b5ebda49455aeb85ee87ea74",
+    "test_scorer.py": "f8b1d4672b615ddba567cff350ea682b57b477e64f6bb2da6828b1537290ff6d"
+  },
+  "checkpoint_sha256": {
+    "checkpoints/origin/origin_embedding.pt": "257d1878c81bba0593c15591935f0e9896077bbab4846a315f1dcdb120d3202e",
+    "checkpoints/text/lora/adapter_model.safetensors": "1308a2a2e43a3e903eb7c0f050af126ca9c88907b7a6b18de77d906ab7e4af4d",
+    "checkpoints/text/lora/README.md": "4fb01070dbf1c311649b741432747c286d5438547f54ccdea88930e6d7b47faa",
+    "checkpoints/text/lora/adapter_config.json": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "checkpoints/origin/lora/adapter_model.safetensors": "426e75db274386cfc91290721361a571b43ca94ebfed215b1e99ac5a23eb0087",
+    "checkpoints/origin/lora/README.md": "4fb01070dbf1c311649b741432747c286d5438547f54ccdea88930e6d7b47faa",
+    "checkpoints/origin/lora/adapter_config.json": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f"
+  }
+}

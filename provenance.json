@@ -1,0 +1,478 @@
+[
+  {
+    "source": "experiments/origin_counterfactual_v2/metrics.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/metrics.json",
+    "source_sha256": "1ebc228a5404df2fb6be0aedaf056441988490d1c7e5953fd3af5e78afc7fea6",
+    "release_sha256": "1ebc228a5404df2fb6be0aedaf056441988490d1c7e5953fd3af5e78afc7fea6",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/predictions.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/predictions.jsonl",
+    "source_sha256": "ad91d48fedf713a64d499b540eecfec430199a811c0a59429671e13617dd4ffd",
+    "release_sha256": "ad91d48fedf713a64d499b540eecfec430199a811c0a59429671e13617dd4ffd",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/data_validation.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/data_validation.json",
+    "source_sha256": "215019ac6adb66b28b3a308fa4cdae02a0dc968bcb35c44f5069f91a89607f02",
+    "release_sha256": "215019ac6adb66b28b3a308fa4cdae02a0dc968bcb35c44f5069f91a89607f02",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/experiment-report.md",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/experiment-report.md",
+    "source_sha256": "1a009967a9cf7bc4ade13724d37ccea7fc3b0bd8baf8c55908f5a2f25326f5cf",
+    "release_sha256": "1a009967a9cf7bc4ade13724d37ccea7fc3b0bd8baf8c55908f5a2f25326f5cf",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/config.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/config.json",
+    "source_sha256": "80cecafe9d32e644b00732c9d931023db2a67f049e9a6e6e53c45662cc0cce33",
+    "release_sha256": "80cecafe9d32e644b00732c9d931023db2a67f049e9a6e6e53c45662cc0cce33",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/results.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/results.json",
+    "source_sha256": "c304aeddb09d5b14d246076475aa157025566000cc36fb0f40209ca3839197f4",
+    "release_sha256": "c304aeddb09d5b14d246076475aa157025566000cc36fb0f40209ca3839197f4",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/training_text.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/training_text.json",
+    "source_sha256": "a8106ea5fe88674cb436240f797fe76d9b07fc3a7505f89dd03b3a0915e1078a",
+    "release_sha256": "a8106ea5fe88674cb436240f797fe76d9b07fc3a7505f89dd03b3a0915e1078a",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/training_origin.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/training_origin.jsonl",
+    "source_sha256": "7d6904042ed44805b2c5d64b4d3a5df02e863bbdd88de0fe50d229d1e9fa28e3",
+    "release_sha256": "7d6904042ed44805b2c5d64b4d3a5df02e863bbdd88de0fe50d229d1e9fa28e3",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/training_text.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/training_text.jsonl",
+    "source_sha256": "7eeaba8e53fa69a95aea9c4d6a7baa91d19e778fb122e2650715d7ca07576ce2",
+    "release_sha256": "7eeaba8e53fa69a95aea9c4d6a7baa91d19e778fb122e2650715d7ca07576ce2",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/origin_diagnostics.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/origin_diagnostics.json",
+    "source_sha256": "4b9098ccb37c513bb94e6613abfc9c610f7ee33de80743bcda62c8b8e58f91a3",
+    "release_sha256": "4b9098ccb37c513bb94e6613abfc9c610f7ee33de80743bcda62c8b8e58f91a3",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/inference_checks.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/inference_checks.json",
+    "source_sha256": "10fa5bc19bef1f33b16b7a9c108d124a741e5ba6e999c3125965fb4fe02a4957",
+    "release_sha256": "10fa5bc19bef1f33b16b7a9c108d124a741e5ba6e999c3125965fb4fe02a4957",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/training_origin.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/training_origin.json",
+    "source_sha256": "e70c2408b3c77e5ae7318f73941f5b7d963e3b3ae62727a8ae328edf1bfaa3e5",
+    "release_sha256": "e70c2408b3c77e5ae7318f73941f5b7d963e3b3ae62727a8ae328edf1bfaa3e5",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/data/train.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/data/train.jsonl",
+    "source_sha256": "93026f318b66c45211e0ac4bc635f0101bd237293747f8116954af1d743969e5",
+    "release_sha256": "93026f318b66c45211e0ac4bc635f0101bd237293747f8116954af1d743969e5",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/data/test.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/data/test.jsonl",
+    "source_sha256": "db155d7e4c0913f4219ede98802539a8f17ab528513d8d1452a91e3d0fe53dc7",
+    "release_sha256": "db155d7e4c0913f4219ede98802539a8f17ab528513d8d1452a91e3d0fe53dc7",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/data/validation.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/data/validation.jsonl",
+    "source_sha256": "b46010d8fbd288a51a6a15232eb51c6a00475e56a55d99a8a701e0300703835b",
+    "release_sha256": "b46010d8fbd288a51a6a15232eb51c6a00475e56a55d99a8a701e0300703835b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/data/cross_template.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/data/cross_template.jsonl",
+    "source_sha256": "353c8bd127a49e59025aecdaefcf26775ee181f31de4354e167335b6d6634511",
+    "release_sha256": "353c8bd127a49e59025aecdaefcf26775ee181f31de4354e167335b6d6634511",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/requirements-lock.txt",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/environment-observed.txt",
+    "source_sha256": "06f8cb75f6cee25c1ba306e7344f9eb067b78cc44efb4c44cae9f14b2eabfe82",
+    "release_sha256": "06f8cb75f6cee25c1ba306e7344f9eb067b78cc44efb4c44cae9f14b2eabfe82",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/metrics.json",
+    "destination": "four-origin/evidence/origin_generation_v3/metrics.json",
+    "source_sha256": "e3e99cb1eee742dcb99faf949fc7981385ee0e87950d61c5e99b58decac32f02",
+    "release_sha256": "e3e99cb1eee742dcb99faf949fc7981385ee0e87950d61c5e99b58decac32f02",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/scorer-tests.json",
+    "destination": "four-origin/evidence/origin_generation_v3/scorer-tests.json",
+    "source_sha256": "e328323194a099ac485edc39a680581de099d3cdd342e8785736ea3ad20dbcd6",
+    "release_sha256": "e328323194a099ac485edc39a680581de099d3cdd342e8785736ea3ad20dbcd6",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/validation-text-100.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/validation-text-100.jsonl",
+    "source_sha256": "bf26254bd638393d1f1675582f6e46bf8c465c3c53b550adb4eb489a4cc1b807",
+    "release_sha256": "bf26254bd638393d1f1675582f6e46bf8c465c3c53b550adb4eb489a4cc1b807",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/transfer-results.json",
+    "destination": "four-origin/evidence/origin_generation_v3/transfer-results.json",
+    "source_sha256": "2afac2b2232822410ea6571a084167cdaaa6c8cc0a1e6ff9a9ca92dd6840dc0b",
+    "release_sha256": "2afac2b2232822410ea6571a084167cdaaa6c8cc0a1e6ff9a9ca92dd6840dc0b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/validation-origin-200.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/validation-origin-200.jsonl",
+    "source_sha256": "01534b2bf80d929292e9fb98f50167d0b03a5d37b6a5512e787f8320603ef560",
+    "release_sha256": "01534b2bf80d929292e9fb98f50167d0b03a5d37b6a5512e787f8320603ef560",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/predictions.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/predictions.jsonl",
+    "source_sha256": "d0480fbdae076907170503a59abce08e26cc8591ba0e8d38171ce888f1f39ff2",
+    "release_sha256": "d0480fbdae076907170503a59abce08e26cc8591ba0e8d38171ce888f1f39ff2",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/training-origin.json",
+    "destination": "four-origin/evidence/origin_generation_v3/training-origin.json",
+    "source_sha256": "953042a77e9bb092224d4e6b0a12aff22248950054a9711a9cf46d26310af06f",
+    "release_sha256": "953042a77e9bb092224d4e6b0a12aff22248950054a9711a9cf46d26310af06f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/examples.json",
+    "destination": "four-origin/evidence/origin_generation_v3/examples.json",
+    "source_sha256": "ca82a11fe7f5379bc18f71fe84cdd2ec4b33f73c9bb1e15ffab03af1bcd382dd",
+    "release_sha256": "ca82a11fe7f5379bc18f71fe84cdd2ec4b33f73c9bb1e15ffab03af1bcd382dd",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/training-text.json",
+    "destination": "four-origin/evidence/origin_generation_v3/training-text.json",
+    "source_sha256": "4ac38e95e403e09501e0ea454a0e53d06fba33a49668083282992616338d9c62",
+    "release_sha256": "4ac38e95e403e09501e0ea454a0e53d06fba33a49668083282992616338d9c62",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/config.json",
+    "destination": "four-origin/evidence/origin_generation_v3/config.json",
+    "source_sha256": "7b650865e58b4febd2d300e24d574755daa65f989324f9a0350fddc38b148d70",
+    "release_sha256": "7b650865e58b4febd2d300e24d574755daa65f989324f9a0350fddc38b148d70",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/results.json",
+    "destination": "four-origin/evidence/origin_generation_v3/results.json",
+    "source_sha256": "0bb113a1dd5ad9100baedc81dcf9f18bee1d0f5da9e2d5d6cd8a1f49db5b16a5",
+    "release_sha256": "0bb113a1dd5ad9100baedc81dcf9f18bee1d0f5da9e2d5d6cd8a1f49db5b16a5",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/validation-origin-100.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/validation-origin-100.jsonl",
+    "source_sha256": "6d9e87ab7033a4195f92006dff7b629f35c633914c956fc30fe703cc3c1a678b",
+    "release_sha256": "6d9e87ab7033a4195f92006dff7b629f35c633914c956fc30fe703cc3c1a678b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/validation-text-200.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/validation-text-200.jsonl",
+    "source_sha256": "28182a7da66b3cc43125fdeced4b344ec9dc3d9c3635271bc388cae5ef19eef5",
+    "release_sha256": "28182a7da66b3cc43125fdeced4b344ec9dc3d9c3635271bc388cae5ef19eef5",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/transfer-predictions.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/transfer-predictions.jsonl",
+    "source_sha256": "953c7eb49a342f5ebd4824b81174f4f82067239fd4c60bdf59aa2e32e18f0f39",
+    "release_sha256": "953c7eb49a342f5ebd4824b81174f4f82067239fd4c60bdf59aa2e32e18f0f39",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/manual-review.json",
+    "destination": "four-origin/evidence/origin_generation_v3/manual-review.json",
+    "source_sha256": "bc7edbcc2db6f98e28d7b458f6acfc0a59e91019cd8c6d3c33fa825e96364444",
+    "release_sha256": "bc7edbcc2db6f98e28d7b458f6acfc0a59e91019cd8c6d3c33fa825e96364444",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/training-origin.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/training-origin.jsonl",
+    "source_sha256": "43b68cccaa49bbc25de31b7db8c6088ac3f641b14bb54dda3783995cb7c2a977",
+    "release_sha256": "43b68cccaa49bbc25de31b7db8c6088ac3f641b14bb54dda3783995cb7c2a977",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data-validation.json",
+    "destination": "four-origin/evidence/origin_generation_v3/data-validation.json",
+    "source_sha256": "0e7db61305c60268d16299fb3641ddd6ff3a949a9bf59e1423a010768c3abe1b",
+    "release_sha256": "0e7db61305c60268d16299fb3641ddd6ff3a949a9bf59e1423a010768c3abe1b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/training-text.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/training-text.jsonl",
+    "source_sha256": "522f08c5f471ae2eaf462c117f2461010ae343bd8d9e91a9651816c29710cd61",
+    "release_sha256": "522f08c5f471ae2eaf462c117f2461010ae343bd8d9e91a9651816c29710cd61",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/review-candidates.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/review-candidates.jsonl",
+    "source_sha256": "ce83f9494b58cdd65dcb7880e4115e9fbfe36cc6a6d91cd8d25363c1968ffe76",
+    "release_sha256": "ce83f9494b58cdd65dcb7880e4115e9fbfe36cc6a6d91cd8d25363c1968ffe76",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/experiment-report.txt",
+    "destination": "four-origin/evidence/origin_generation_v3/experiment-report.txt",
+    "source_sha256": "a32221b5d5e2ae4f1bf12124203df65eda5e37d3ae70f04835e059920df1fb9b",
+    "release_sha256": "a32221b5d5e2ae4f1bf12124203df65eda5e37d3ae70f04835e059920df1fb9b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/cache-checks.json",
+    "destination": "four-origin/evidence/origin_generation_v3/cache-checks.json",
+    "source_sha256": "0581cbdf0d6eb2c65be1e03ded45d60bb5ccfd0491eddc942ff04f0d1e64888f",
+    "release_sha256": "0581cbdf0d6eb2c65be1e03ded45d60bb5ccfd0491eddc942ff04f0d1e64888f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/evaluation-protocol.json",
+    "destination": "four-origin/evidence/origin_generation_v3/evaluation-protocol.json",
+    "source_sha256": "ff4526e99309fca41f67132f196f572636ad161089b6af83af54c3b5055a9d75",
+    "release_sha256": "ff4526e99309fca41f67132f196f572636ad161089b6af83af54c3b5055a9d75",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data/train.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/data/train.jsonl",
+    "source_sha256": "0ab2b1686e17b818841e3a068b2e1cc9aed8ae11baa8673286c50a49d7304edf",
+    "release_sha256": "0ab2b1686e17b818841e3a068b2e1cc9aed8ae11baa8673286c50a49d7304edf",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data/test.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/data/test.jsonl",
+    "source_sha256": "6a64f0ee313c026f6b02e808f2d8ed3ff57697b07ab1678bed0b14044e9bc073",
+    "release_sha256": "6a64f0ee313c026f6b02e808f2d8ed3ff57697b07ab1678bed0b14044e9bc073",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data/validation.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/data/validation.jsonl",
+    "source_sha256": "c55fd5511cb28f0e7213c00cbad5720d9a6a5d6384cceedbe3f0ed7cfafe2fee",
+    "release_sha256": "c55fd5511cb28f0e7213c00cbad5720d9a6a5d6384cceedbe3f0ed7cfafe2fee",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data/cross_template.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/data/cross_template.jsonl",
+    "source_sha256": "4037c4bae6cc0c5d854fdeb0c43d3cedc1eeff7b18bde4f0b698af0612e00b74",
+    "release_sha256": "4037c4bae6cc0c5d854fdeb0c43d3cedc1eeff7b18bde4f0b698af0612e00b74",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/data/transfer.jsonl",
+    "destination": "four-origin/evidence/origin_generation_v3/data/transfer.jsonl",
+    "source_sha256": "6fe89976d49ec4bbcc3019e6854af71d8917d23747946ed22a5f83c09073e75f",
+    "release_sha256": "6fe89976d49ec4bbcc3019e6854af71d8917d23747946ed22a5f83c09073e75f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/requirements-lock.txt",
+    "destination": "four-origin/evidence/origin_generation_v3/environment-observed.txt",
+    "source_sha256": "06f8cb75f6cee25c1ba306e7344f9eb067b78cc44efb4c44cae9f14b2eabfe82",
+    "release_sha256": "06f8cb75f6cee25c1ba306e7344f9eb067b78cc44efb4c44cae9f14b2eabfe82",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/run_experiment.py",
+    "destination": "four-origin/experiments/origin_counterfactual_v2/run_experiment.py",
+    "source_sha256": "2a995a8c491452dffa03aa76bd573028830027a1e6c89f7eb9ef83211232738c",
+    "release_sha256": "2a995a8c491452dffa03aa76bd573028830027a1e6c89f7eb9ef83211232738c",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/origin_diagnostics.json",
+    "destination": "four-origin/experiments/origin_counterfactual_v2/origin_diagnostics.json",
+    "source_sha256": "4b9098ccb37c513bb94e6613abfc9c610f7ee33de80743bcda62c8b8e58f91a3",
+    "release_sha256": "4b9098ccb37c513bb94e6613abfc9c610f7ee33de80743bcda62c8b8e58f91a3",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/run_v3.py",
+    "destination": "four-origin/experiments/origin_generation_v3/run_v3.py",
+    "source_sha256": "30d219aaf2e60a2f35b13b8fc7066ed14597be33f83d0ae68cee1d486a5e78ca",
+    "release_sha256": "5c68a06e26a3fd04f2f6743ef668ba73deecdf1d5d287cdd0c8d3f7d709f1047",
+    "modified": true
+  },
+  {
+    "source": "experiments/origin_generation_v3/test_scorer.py",
+    "destination": "four-origin/experiments/origin_generation_v3/test_scorer.py",
+    "source_sha256": "f8b1d4672b615ddba567cff350ea682b57b477e64f6bb2da6828b1537290ff6d",
+    "release_sha256": "f8b1d4672b615ddba567cff350ea682b57b477e64f6bb2da6828b1537290ff6d",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/template_diagnosis/diagnosis-report.txt",
+    "source_sha256": "110ec916871cb69027842003208510e506083e37de3d191b93fe949fb7f77dc8",
+    "release_sha256": "110ec916871cb69027842003208510e506083e37de3d191b93fe949fb7f77dc8",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/template_diagnosis/results.json",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/template_diagnosis/results.json",
+    "source_sha256": "3df017a808aa5707db7c901b98a3767d94431deef76ebb32a653700d774c120e",
+    "release_sha256": "3df017a808aa5707db7c901b98a3767d94431deef76ebb32a653700d774c120e",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/template_diagnosis/predictions.jsonl",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/template_diagnosis/predictions.jsonl",
+    "source_sha256": "994063d9329cbd9589bd2c9d22c7db32815918cfe3f0683e0c2e616cf8820aee",
+    "release_sha256": "994063d9329cbd9589bd2c9d22c7db32815918cfe3f0683e0c2e616cf8820aee",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/template_diagnosis/diagnose_templates.py",
+    "destination": "four-origin/evidence/origin_counterfactual_v2/template_diagnosis/diagnose_templates.py",
+    "source_sha256": "c15541ccc5bebd0bc7b1a75a253042881219053fded4b43191f1c6c02d552c0f",
+    "release_sha256": "c15541ccc5bebd0bc7b1a75a253042881219053fded4b43191f1c6c02d552c0f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_scoring_v41/validation-report.md",
+    "destination": "four-origin/evidence/v41-status/validation-report.md",
+    "source_sha256": "1d99545f390d7da171dbbc69fca2b1159e946c84014d459073284e0f81404d3e",
+    "release_sha256": "1d99545f390d7da171dbbc69fca2b1159e946c84014d459073284e0f81404d3e",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_scoring_v41/publication-summary.md",
+    "destination": "four-origin/evidence/v41-status/publication-summary.md",
+    "source_sha256": "fd5e9a85f51cc92b931a3e57d2bb98df061d98531bc08703c90ef681a9e67acc",
+    "release_sha256": "fd5e9a85f51cc92b931a3e57d2bb98df061d98531bc08703c90ef681a9e67acc",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_scoring_v41/validation-results.json",
+    "destination": "four-origin/evidence/v41-status/validation-results.json",
+    "source_sha256": "ed5f495f34f86193bdd11a8615b64f6d2be75ed52bb72bc16218b329d556f29b",
+    "release_sha256": "ed5f495f34f86193bdd11a8615b64f6d2be75ed52bb72bc16218b329d556f29b",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_scoring_v41/spec-freeze.json",
+    "destination": "four-origin/evidence/v41-status/spec-freeze.json",
+    "source_sha256": "129b0ef6851f817b998ad74097d69a48bd0d3334f80cc592cbb43d8d09949bf1",
+    "release_sha256": "129b0ef6851f817b998ad74097d69a48bd0d3334f80cc592cbb43d8d09949bf1",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_scoring_v41/code-freeze.json",
+    "destination": "four-origin/evidence/v41-status/code-freeze.json",
+    "source_sha256": "738471f4ec7e8249cdc83fb5e2e8ddeb680a5f414156706e02671d1bf489c3f3",
+    "release_sha256": "738471f4ec7e8249cdc83fb5e2e8ddeb680a5f414156706e02671d1bf489c3f3",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/checkpoints/text/lora/adapter_config.json",
+    "destination": "huggingface/v2-text/lora/adapter_config.json",
+    "source_sha256": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "release_sha256": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/checkpoints/text/lora/adapter_model.safetensors",
+    "destination": "huggingface/v2-text/lora/adapter_model.safetensors",
+    "source_sha256": "9e6c1bfafbefb9a91dd072d1a041341baa39f320a6a91c4e6fcd8a876e97ceb5",
+    "release_sha256": "9e6c1bfafbefb9a91dd072d1a041341baa39f320a6a91c4e6fcd8a876e97ceb5",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/checkpoints/origin/lora/adapter_config.json",
+    "destination": "huggingface/v2-origin/lora/adapter_config.json",
+    "source_sha256": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f",
+    "release_sha256": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/checkpoints/origin/lora/adapter_model.safetensors",
+    "destination": "huggingface/v2-origin/lora/adapter_model.safetensors",
+    "source_sha256": "68563727f86fd3d1f2feec154b7a1065f0e498462cb328e450338124844dccb8",
+    "release_sha256": "68563727f86fd3d1f2feec154b7a1065f0e498462cb328e450338124844dccb8",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_counterfactual_v2/checkpoints/origin/origin_embedding.pt",
+    "destination": "huggingface/v2-origin/origin_embedding.pt",
+    "source_sha256": "1374137bcbc11fcef6580ca69782f50db514c63e64e0601e355a861cd1ae4cbd",
+    "release_sha256": "1374137bcbc11fcef6580ca69782f50db514c63e64e0601e355a861cd1ae4cbd",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/checkpoints/text/lora/adapter_config.json",
+    "destination": "huggingface/v3-text/lora/adapter_config.json",
+    "source_sha256": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "release_sha256": "4ed67247993152de870045c4551f54de48a5fb0b65d61118bf95acb2c15dfe67",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/checkpoints/text/lora/adapter_model.safetensors",
+    "destination": "huggingface/v3-text/lora/adapter_model.safetensors",
+    "source_sha256": "1308a2a2e43a3e903eb7c0f050af126ca9c88907b7a6b18de77d906ab7e4af4d",
+    "release_sha256": "1308a2a2e43a3e903eb7c0f050af126ca9c88907b7a6b18de77d906ab7e4af4d",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/checkpoints/origin/lora/adapter_config.json",
+    "destination": "huggingface/v3-origin/lora/adapter_config.json",
+    "source_sha256": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f",
+    "release_sha256": "8a68945fb5d71cf20d15bdaeeb32e33f99f095dcd8b2c65277c75291e0c0eb2f",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/checkpoints/origin/lora/adapter_model.safetensors",
+    "destination": "huggingface/v3-origin/lora/adapter_model.safetensors",
+    "source_sha256": "426e75db274386cfc91290721361a571b43ca94ebfed215b1e99ac5a23eb0087",
+    "release_sha256": "426e75db274386cfc91290721361a571b43ca94ebfed215b1e99ac5a23eb0087",
+    "modified": false
+  },
+  {
+    "source": "experiments/origin_generation_v3/checkpoints/origin/origin_embedding.pt",
+    "destination": "huggingface/v3-origin/origin_embedding.pt",
+    "source_sha256": "257d1878c81bba0593c15591935f0e9896077bbab4846a315f1dcdb120d3202e",
+    "release_sha256": "257d1878c81bba0593c15591935f0e9896077bbab4846a315f1dcdb120d3202e",
+    "modified": false
+  }
+]

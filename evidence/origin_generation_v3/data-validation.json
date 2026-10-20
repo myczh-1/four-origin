@@ -1,0 +1,33 @@
+{
+  "splits": {
+    "train": {
+      "pairs": 320,
+      "records": 640,
+      "sha256": "0ab2b1686e17b818841e3a068b2e1cc9aed8ae11baa8673286c50a49d7304edf"
+    },
+    "validation": {
+      "pairs": 24,
+      "records": 48,
+      "sha256": "c55fd5511cb28f0e7213c00cbad5720d9a6a5d6384cceedbe3f0ed7cfafe2fee"
+    },
+    "transfer": {
+      "pairs": 12,
+      "records": 24,
+      "sha256": "6fe89976d49ec4bbcc3019e6854af71d8917d23747946ed22a5f83c09073e75f"
+    },
+    "test": {
+      "pairs": 48,
+      "records": 96,
+      "sha256": "6a64f0ee313c026f6b02e808f2d8ed3ff57697b07ab1678bed0b14044e9bc073"
+    },
+    "cross_template": {
+      "pairs": 48,
+      "records": 96,
+      "sha256": "4037c4bae6cc0c5d854fdeb0c43d3cedc1eeff7b18bde4f0b698af0612e00b74"
+    }
+  },
+  "unique_entities": 452,
+  "pair_token_identity": true,
+  "swap_matches_partner": true,
+  "value_domains_shared": true
+}
